@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import QRCode from 'qrcode';
+import { getAdminCredentials, validateAdminLogin } from './auth.mjs';
 import {
   AlertCircle,
   ArrowRight,
@@ -32,6 +33,7 @@ import {
 import './styles.css';
 
 const storageKey = 'dcode-demo-state-v6';
+const authStorageKey = 'dcode-admin-auth-v1';
 
 const navItems = [
   { label: 'Dashboard', icon: LayoutDashboard, active: true },
@@ -463,6 +465,11 @@ function readStoredDemoState() {
   }
 }
 
+function readAdminSession() {
+  if (typeof window === 'undefined') return false;
+  return window.localStorage.getItem(authStorageKey) === 'signed-in';
+}
+
 async function fetchJson(url, options) {
   const response = await fetch(url, {
     headers: { 'content-type': 'application/json' },
@@ -803,6 +810,58 @@ function QrCodeIcon() {
   );
 }
 
+function AdminLoginPage({ onLogin }) {
+  const [username, setUsername] = useState(getAdminCredentials(import.meta.env).username);
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
+  function submitLogin(event) {
+    event.preventDefault();
+    if (!validateAdminLogin({ username, password }, import.meta.env)) {
+      setError('Login failed. Check username and password.');
+      return;
+    }
+    window.localStorage.setItem(authStorageKey, 'signed-in');
+    onLogin();
+  }
+
+  return (
+    <main className="public-shell login-shell">
+      <section className="login-panel">
+        <div className="public-brand">
+          <div>
+            <span>DCODE</span>
+            <strong>Local Admin Login</strong>
+          </div>
+          <ShieldCheck size={30} />
+        </div>
+        <div className="checkin-hero">
+          <h1>Admin Portal Login</h1>
+          <p>Sign in to open the localhost admin dashboard. QR check-in pages remain public for attendees.</p>
+        </div>
+        <form className="login-form" onSubmit={submitLogin}>
+          <label>
+            Username
+            <input value={username} onChange={(event) => setUsername(event.target.value)} autoComplete="username" />
+          </label>
+          <label>
+            Password
+            <input value={password} onChange={(event) => setPassword(event.target.value)} type="password" autoComplete="current-password" autoFocus />
+          </label>
+          {error && <div className="login-error">{error}</div>}
+          <button className="confirm-checkin" type="submit">
+            <Lock size={18} />
+            Login
+          </button>
+        </form>
+        <div className="login-hint">
+          Default localhost login: <strong>admin</strong> / <strong>dcode2026</strong>
+        </div>
+      </section>
+    </main>
+  );
+}
+
 function App() {
   const publicRoute = getPublicRoute();
   if (publicRoute?.type === 'checkin') {
@@ -812,6 +871,7 @@ function App() {
     return <QrPage cohortCode={publicRoute.cohortCode} />;
   }
 
+  const [isAdminSignedIn, setIsAdminSignedIn] = useState(readAdminSession);
   const storedDemoState = useMemo(() => readStoredDemoState(), []);
   const [selectedCohort, setSelectedCohort] = useState('CP138 - Certificate in Data Analytics');
   const [showSetup, setShowSetup] = useState(false);
@@ -854,8 +914,8 @@ function App() {
   }, [columns, halls, activities, tasks, objectLogs, pageRows, cohortTree, hallSessions, classCalendar, doeDashboard, callCenterDashboard, demoCycle, relationships, registrationSeq]);
 
   useEffect(() => {
-    refreshFromDatabase();
-  }, []);
+    if (isAdminSignedIn) refreshFromDatabase();
+  }, [isAdminSignedIn]);
 
   function applyServerState(state) {
     setColumns(state.columns);
@@ -1187,11 +1247,22 @@ function App() {
     }
   }
 
+  if (!isAdminSignedIn) {
+    return <AdminLoginPage onLogin={() => setIsAdminSignedIn(true)} />;
+  }
+
   return (
     <div className="app-shell">
       <Sidebar activePage={activePage} onNavigate={setActivePage} />
       <main className="main">
-        <Topbar query={query} onQuery={setQuery} />
+        <Topbar
+          query={query}
+          onQuery={setQuery}
+          onLogout={() => {
+            window.localStorage.removeItem(authStorageKey);
+            setIsAdminSignedIn(false);
+          }}
+        />
         {activePage === 'Dashboard' && (
           <div className="alert-strip">
             <AlertPill tone="red" label={`DOE missing: ${totals.doeMissing}`} />
@@ -1493,7 +1564,7 @@ function Sidebar({ activePage, onNavigate }) {
   );
 }
 
-function Topbar({ query, onQuery }) {
+function Topbar({ query, onQuery, onLogout }) {
   return (
     <header className="topbar">
       <h1>Dcode Admin Portal</h1>
@@ -1521,6 +1592,10 @@ function Topbar({ query, onQuery }) {
             <small>Super Admin</small>
           </div>
         </div>
+        <button className="logout-button" onClick={onLogout} type="button">
+          <Lock size={15} />
+          Logout
+        </button>
       </div>
     </header>
   );
