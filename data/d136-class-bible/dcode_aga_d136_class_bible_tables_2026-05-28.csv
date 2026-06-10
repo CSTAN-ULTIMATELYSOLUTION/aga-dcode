@@ -1,0 +1,443 @@
+category,table_name,table_id,field_count,view_count,sample_fields,views,errors
+Bible core,✅✅136学员-NEWBIBLE_（Dcode),tbloNC2PXiCTMGfQ,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Summary / aggregation,总结合,tbl642uyWaEnVkbw,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Scoring / grading,Grade ABC【EMO】,tbl6T4FpFyR4b58Q,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Scoring / grading,Grade ABC【教练填】,tblRWgxhglDxpFn0,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Coach roster,✅教练名单（中心）,tblGUjQxgo5Ipz0W,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Bible core,✅✅136教练-NEWBIBLE_（Dcode),tblinixxUxRFCwRm,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Registration,✅课程报名,tblEryveHiL5zhXw,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Masterlist / final list,✅✅136-WHOLE-MASTERLIST【基础-高四】,tbli7eKtZoR3FHGo,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Backlog / transition,✅✅136-旧Backlog【基础-高四】,tblYTjyktzYogxgI,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Masterlist / final list,✅✅136-【神奇宝宝】WHOLE-MASTERLIST【基础-高四】,tblPKvDeyibe8k9S,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Bible core,✅135-【旧Backlog进现行】WHOLE-MASTERLIST 高阶一Bible.,tblYAlPkFE7sPELF,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Masterlist / final list,🖊️🖊️136-基础FINAL MASTERLIST,tbl3o00MSTdj8IKu,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Masterlist / final list,🖊️🖊️136-【基础守则离开】FINAL MASTERLIST.,tblixDC3NkhCkEZO,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Masterlist / final list,🖊️🖊️136-【基础Backlog】FINAL MASTERLIST.,tblsTRd73wlyC1Vq,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Masterlist / final list,🖊️-136-高阶一-【高阶一Backlog】Final Masterlist.,tblHLDlRApL2TxX4,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Masterlist / final list,🖊️-136-高阶一-FINAL MASTERLIST,tblg5TWNiThHFXmZ,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Masterlist / final list,🖊️-136-高阶一-【守则后离开】Final Masterlist.,tblXMB7pANylOuoz,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+DOE / declaration,✅A0-136_高一-10天宣告,tblG4w8jVbBDtqwd,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+DOE / declaration,✅A0-136高一-10天宣告,tblyuNxnenlj9kfY,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Other,高阶二2Call,tblhJfcDFuIYm1d4,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+DOE / declaration,【高二】事业成就表,tblhq5WHye1s3dia,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+DOE / declaration,✅高二工作坊DOE宣告（开班前）,tblkhMgczjHRF0tu,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+DOE / declaration,✅135-高二工作坊DOE宣告（开班前）,tblDonTPhFNcDVCj,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Masterlist / final list,🖊️-136-高阶二-Final Masterlist.,tblFDFggY4R0QWHw,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Bible core,🖊️-136-高阶二-【高阶二Backlog】Bible,tblLpp3oe4eUiAdt,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Result / outcome,🔥-学员海星个人结果,tbl9x3xLfzzlbtMO,0,0,,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:field:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:field:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}; {
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:view:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:view:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"

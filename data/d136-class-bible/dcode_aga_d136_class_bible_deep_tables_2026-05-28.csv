@@ -1,0 +1,239 @@
+category,table_name,table_id,field_count,view_count,form_count,sample_fields,views,forms,errors
+Bible core,✅✅136学员-NEWBIBLE_（Dcode),tbloNC2PXiCTMGfQ,144,9,0,"EMO 华语名字; 基础1call; 个人海星位置; 基础健康面谈; 基础确认当班; 高阶一2CalL (A,B,C,D); 年龄; 字段 2; 杂费定金  (A,B,C,D); 高阶一C1-3信息  (A,B,C,D); 基础C1-3信息; 高阶一酒店费用  (A,B,C,D); 高阶健康; 杂费定金付费方式 (A,B,C,D); 高阶转名额; 文字-6; 高阶余款  (A,B,C,D); 职位; 高阶 - 全款/订金; 杂费定金余款 (A,B,C,D); 付费方式; 酒店费用; 基础C1-4信息; SO/Transfer No.; 信念系统日期  (A,B,C,D)",Bible (不能删&不能动任何东西）; 客服联系; 确认138; 分emo; 【外】团队数据; Agnes专属; Grid 7(dashboard_view); Grid 7; 表格 8(dashboard_view),,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Summary / aggregation,总结合,tbl642uyWaEnVkbw,32,3,0,事业结合; 为谁而来？; 学员态度A: 主动+真诚B: 真诚 但不一定主动C: 不开放; 结果期别; 存款大约多少？; Connie ABC; 源头; 基础已进课室; 年收入; Copy_学员的名字过来; 职位; 中心全报位置; 佩玲ABC; 教练名字; 工作; 学员事业背景; 孩子几个; EMO 华语名字; 营业额（经营企业）; 基础离开; Cashflow; 企业人数; 学员这几天发现自己什么？要进步的原因是什么？; 为何而来？; 基础学员名字,Grade ABC; 教练小组; 表格 3(dashboard_view),,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Scoring / grading,Grade ABC【EMO】,tbl6T4FpFyR4b58Q,26,2,0,海星华语全名; 工作; 为何而来？; 联络电话号码; 其他期别-Emo名字; 源头; Emo名字【结合】; 婚姻状况; 企业人数; Timestamp; 为谁而来？; 负债; 133-Emo华语全名; Emo期别; 海星英语全名; 职业（行业）; 营业额（经营企业）; 连报; Cashflow; 年收入; 职位; 132-Emo华语全名; 有几个孩子？; 135-Emo华语全名; 年龄,Grade ABC【EMO】; 136基础课程 - 海星资料,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Scoring / grading,Grade ABC【教练填】,tblRWgxhglDxpFn0,6,2,0,"学员态度
+A: 主动+真诚
+B: 真诚 但不一定主动
+C: 不开放; Timestamp; 教练; 学员华语名字; 学员事业背景; 学员这几天发现自己什么？要进步的原因是什么？",教练填的; KLCP136基础课程  -  学员位置,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Coach roster,✅教练名单（中心）,tblGUjQxgo5Ipz0W,41,3,0,工作年资; 期别 112/116/128; 住家地址; Buddy; 年收入水平; 身份证号码/护照号码; 公司地址; Buddy Copy; 我要创造的价值是什么？我承诺予团队的是什么？多说一说; 中文全名 副本; 公司名称; 付出期别 1 /职位/ 摇篮曲; 主要家庭成员; 本人签名; 当教练的目的，多说一说; 对家庭的愿景; 电子邮箱; 教练级别; 教练确定(中心）; 高阶四阶段摇篮曲（三周末）; 我承诺于KLCP教练付出之路，并服从以下教练行为守则。; 职位; 娘家直属教练; 教练List; 娘家期别,教练团资料; 136教练填写表单; >131-教练填写表单,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Bible core,✅✅136教练-NEWBIBLE_（Dcode),tblinixxUxRFCwRm,200,4,0,"高阶一离开 (A,B,C,D); 字段 86; 字段 87; 膳食; 字段 5; 毕业证 (A,B,C,D); 付费方式 (1); 字段 95; 客户等级; 基础 - 全款/订金; SO/Transfer No.; 字段 55; 高阶二已进课室人数; 字段 12; 生日日期; 字段 100; 州; 基础确认期别; 邮箱; 酒店费用; 字段 99; 付费方式; 字段 56; 基础2Call; 高阶定金 (A,B,C,D)",Bible (不能删&不能动任何东西）; 客服联系; 确认138; Grid 4,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Registration,✅课程报名,tblEryveHiL5zhXw,8,1,0,SourceID; 定金 (RM); 杂费 (RM); 学费 (RM); 课程内容; Total (RM); Grand Total (RM); 8% SST (RM),Grid,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Masterlist / final list,✅✅136-WHOLE-MASTERLIST【基础-高四】,tbli7eKtZoR3FHGo,141,38,0,"高阶一确认当班 (A,B,C,D); 州; 市区; 文字-1; 杂费定金  (A,B,C,D); 文字-3; 文字-6; 学号; 高阶二卓越宣言表  (A,B,C,D); 高阶一确认当班人数; 高阶一教练; SO/Transfer No.; 高阶四已进课室人数; 高阶健康; 基础已进课室+英文名字; 基础报读日期; 高阶二后离开原因; 高阶余款  (A,B,C,D); 膳食费用; 高阶补款 (A,B,C,D); 个人海星位置; EMO 华语名字; 高阶一酒店费用  (A,B,C,D); 高阶总费用 (A,B,C,D); 高阶 - 全款/订金",❌Whole Masterlist(不能删&不能动任何东西）; Account【基础课前】; 【基础】Masterlist【前中后】; 报到; 【教练小组】; 【扣高阶结果】; 【基础Final Masterlist】; 【基础Final Masterlist】 副本; 【基础Final Masterlist-守则离开】; ❌高阶一Whole Materlist; nana; 高阶一BIBLE Account; 高阶一A-Z; 【高一】Masterlist; 【高一】Account,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Backlog / transition,✅✅136-旧Backlog【基础-高四】,tblYTjyktzYogxgI,141,26,0,"杂费定金付费方式_高二  (A,B,C,D); 高阶一确认期别 (A,B,C,D); 基础已进课室人数; 高阶付费方式 (A,B,C,D); 公司规模 (多少人); 2 Call Status /学员的位置  (A,B,C,D); 地址; 高阶二C1-4信息  (A,B,C,D); 孩子; 基础确认当班; IC No; 高阶一1 Call Status (A,B,C,D); EMO期别; 高阶 - 全款/订金; 高阶三已进课室; 膳食; 基础1call; 【报到】高阶二几点到; 华语名字; 高阶二酒店费用  (A,B,C,D); 信念系统当班  (A,B,C,D); 高阶二C1-3信息  (A,B,C,D); 【报到】高阶一几点到; 高阶三已进课室人数; 高阶四已进课室",❌Whole Masterlist(不能删&不能动任何东西）; Account【基础课前】; 【基础】Masterlist【前中后】; 报到; 【教练小组】; 【扣高阶结果】; 【基础Final Masterlist】; 【基础Final Masterlist-守则离开】; ❌高阶一Whole Materlist; 高阶一Bible Account; 高阶一A-Z; 【高一】Masterlist; 【高一】2CALL; 【高一】Account; 【高一】Final Masterlist,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Masterlist / final list,✅✅136-【神奇宝宝】WHOLE-MASTERLIST【基础-高四】,tblPKvDeyibe8k9S,141,26,0,"年收入; 基础确认期别; 州; 高阶一1 Call Status (A,B,C,D); EMO期别; 高阶二已进课室 (A,B,C,D); 孩子; EMO 联络号码; 邮政编号; 膳食费用; 高阶一确认期别人数; 英文名字; 高阶付费方式_1; 高阶一2CalL (A,B,C,D); 文字-1; 定金; 杂费定金付费方式_高二  (A,B,C,D); 公司名称; 高阶一确认当班人数; 高阶二1 Call Status (A,B,C,D); 信念系统当班期别 (A,B,C,D); 高阶二酒店费用  (A,B,C,D); 个人海星位置; 结果期别; 毕业证 (A,B,C,D)",❌Whole Masterlist(不能删&不能动任何东西）; Account【基础课前】; 【基础】Masterlist【前中后】; 报到; 【教练小组】; 【扣高阶结果】; 【基础Final Masterlist】; 【基础Final Masterlist-守则离开】; ❌高阶一Whole Materlist; 高阶一Bible Account; 高阶一A-Z; 【高一】Masterlist; 【高一】2CALL; 【高一】Account; 【高一】Final Masterlist,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Bible core,✅135-【旧Backlog进现行】WHOLE-MASTERLIST 高阶一Bible.,tblYAlPkFE7sPELF,141,26,0,"高阶二2Call  (A,B,C,D); 基础离开; 市区; 基础C1-4信息/Account Check; 高阶二C1-4信息  (A,B,C,D); 高阶总费用 (A,B,C,D); 高阶一离开 (A,B,C,D); 高阶一酒店费用  (A,B,C,D); 基础阶段教练; 基础C1-3信息; 高阶付费方式 (A,B,C,D); 基础1 Call Status; 高阶-Invoice Name; 高阶一2CalL (A,B,C,D); 公司名称; 生日日期; 8%SST; 高阶二C1-3信息  (A,B,C,D); 高阶二教练; 基础学费; 高阶二后离开原因; 邮箱; 基础转名额; 个人海星位置; 基础酒店人数",❌Whole Masterlist(不能删&不能动任何东西）; Account【基础课前】; 【基础】Masterlist【前中后】; 报到; 【教练小组】; 【扣高阶结果】; 【基础Final Masterlist】; 【基础Final Masterlist-守则离开】; ❌高阶一Whole Materlist; 高阶一Bible Account; 高阶一A-Z; 【高一】Masterlist; 【高一】2CALL; 【高一】Account; 【高一】Final Masterlist,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Masterlist / final list,🖊️🖊️136-基础FINAL MASTERLIST,tbl3o00MSTdj8IKu,141,1,0,"孩子; 高阶三已进课室; 基础阶段教练; 高阶四已进课室; 报名时间段; EMO 英文名字; 文字-6; 课室内名单; 邮政编号; 高阶定金 (A,B,C,D); 基础1 Call Status; 付费方式 (1); 高阶一C1-4信息  (A,B,C,D); 基础已进课室人数; 基础酒店人数; 付费方式; 杂费定金余款 (A,B,C,D); 2 Call Status /学员的位置  (A,B,C,D); 高阶二1 Call Status (A,B,C,D); 高阶五已经课室; 高阶一1call(A,B,C,D); 高阶补款 (A,B,C,D); EMO期别; 基础C1-4信息/Account Check; 高阶转名额",❌Whole Masterlist(不能删&不能动任何东西）,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Masterlist / final list,🖊️🖊️136-【基础守则离开】FINAL MASTERLIST.,tblixDC3NkhCkEZO,141,1,0,"文字-1; 基础 - 全款/订金; 【基础】Tax invoice name; 结果期别; EMO 英文名字; 高阶二确认当班 (A,B,C,D); 余款; 高阶一酒店费用  (A,B,C,D); EMO 华语名字; 高阶二1call  (A,B,C,D); 基础学费; 付费方式 (1); 英文名字; 基础确认期别; 生日日期; 毕业证 (A,B,C,D); 文字-5; 基础转名额; 邮政编号; 性别; SO/Transfer No.; 信念系统当班期别 (A,B,C,D); 高阶一C1-4信息  (A,B,C,D); 公司名称; 高阶二C1-4信息  (A,B,C,D)",❌Whole Masterlist(不能删&不能动任何东西）,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Masterlist / final list,🖊️🖊️136-【基础Backlog】FINAL MASTERLIST.,tblsTRd73wlyC1Vq,141,1,0,"杂费定金付费方式_高二  (A,B,C,D); 基础学费; 高阶二1call  (A,B,C,D); 高阶二C1-3信息  (A,B,C,D); 基础已进课室（KLCP); 信念系统当班期别 (A,B,C,D); 高阶二后离开原因; 高阶总费用 (A,B,C,D); 州; 高阶二确认期别 (A,B,C,D); 付费方式; 高阶付费方式_1; 文字-5; 文字-3; 高阶一C1-3信息  (A,B,C,D); 膳食; 高阶一已进课室; 杂费定金余款 (A,B,C,D); 基础确认当班; 【报到】高阶二几点到; 杂费定金补款  (A,B,C,D); Mark有约意愿度; 高阶健康; 文字-6; 高阶一2CalL (A,B,C,D)",❌Whole Masterlist(不能删&不能动任何东西）,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Masterlist / final list,🖊️-136-高阶一-【高阶一Backlog】Final Masterlist.,tblHLDlRApL2TxX4,141,1,0,"EMO期别; 全报; 高阶一确认当班人数; 高阶五已经课室; 紧急联系人（姓名、关系、电话）; 高阶二后离开原因; 年收入; 膳食; 电话; 膳食费用; 付费方式 (1); 高阶学费SST  (A,B,C,D); 基础2Call; 杂费定金补款  (A,B,C,D); 高阶二确认期别 (A,B,C,D); 职位; 基础阶段教练; 高阶转名额; 高阶一1 Call Status (A,B,C,D); 【基础】Tax invoice name; 基础转名额; 市区; 基础报读日期; 高阶SO/Transfer No. (A,B,C,D); 年历",❌Whole Masterlist(不能删&不能动任何东西）,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Masterlist / final list,🖊️-136-高阶一-FINAL MASTERLIST,tblg5TWNiThHFXmZ,141,1,0,"高阶二总费用  (A,B,C,D); 四摇篮曲 (A,B,C,D); 基础阶段教练; SO/Transfer No.; 高阶一教练; 高阶二后离开原因; 高阶二确认当班 (A,B,C,D); 基础健康; 高阶三已进课室; EMO 英文名字; 基础转名额; 高阶一C1-4信息  (A,B,C,D); 基础离开; 高阶二教练; 职位; 高阶健康面谈; 高阶 - 全款/订金; 基础问卷; 课室内名单; 高阶一1 Call Status (A,B,C,D); 8%SST; 基础1 Call Status; 基础确认当班; 高阶五已经课室; 高阶二2Call  (A,B,C,D)",❌Whole Masterlist(不能删&不能动任何东西）,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Masterlist / final list,🖊️-136-高阶一-【守则后离开】Final Masterlist.,tblXMB7pANylOuoz,141,1,0,"电话; 团队干部 (A,B,C,D); 客户等级; Mark有约意愿度; 基础2Call; 高阶报读日期  (A,B,C,D); 高阶二2Call  (A,B,C,D); 基础离开; 高阶转名额; 高阶二教练; 高阶一来的目的、急需解决的问题  (A,B,C,D); 信念系统日期  (A,B,C,D); 杂费定金付费方式 (A,B,C,D); 信念系统当班期别 (A,B,C,D); 基础1 Call Status; 孩子; 学员/教练; 高阶二1call  (A,B,C,D); 杂费定金  (A,B,C,D); 高阶二酒店费用  (A,B,C,D); 个人海星位置; EMO 英文名字; 高阶补款 (A,B,C,D); 誓约 （A); 基础已进课室+英文名字",❌Whole Masterlist(不能删&不能动任何东西）,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+DOE / declaration,✅A0-136_高一-10天宣告,tblG4w8jVbBDtqwd,13,1,0,什么原因是小目标？：; 事业性质; 事业给与什么价值：; 中心Call时间 （星期几 + 几点am/pm); 事业定义（赢的标准）; 什么原因是这个对象？：; 教练; 学员名字（还没有链接）; 家庭对象1：; SourceID; 学员; 指引负责人_; 事业总宣告,136高阶一宣告,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+DOE / declaration,✅A0-136高一-10天宣告,tblyuNxnenlj9kfY,15,1,0,学员名字（还没有链接）; 家庭对象1：; 总教验收; 教练; 事业定义（赢的标准）; 总教备注; 华语名字; 事业总宣告; 事业性质; 什么原因是小目标？：; 什么原因是这个对象？：; 中心Call时间 （星期几 + 几点am/pm); 指引负责人_; SourceID; 事业给与什么价值：,133高阶一宣告,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Other,高阶二2Call,tblhJfcDFuIYm1d4,141,1,0,名字; 字段 6; 字段 45; 字段 40; 字段 113; 字段 72; 字段 103; 字段 61; 字段 99; 字段 7; 状况; 电话号码; 字段 23; 字段 51; 字段 32; 字段 56; 字段 22; 字段 85; 字段 70; 字段 68; 高阶二确认当班; 字段 122; 字段 13; 字段 127; 字段 44,表格,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+DOE / declaration,【高二】事业成就表,tblhq5WHye1s3dia,28,3,0,年历; 职位; 行业性质; 英文名字; 【事业2】宣告; 孩子; 【事业1】-定义; 基础已进课室+英文名字; 序号——; 基础阶段教练; Emo期别; 高阶二进课室; Lark【新收入】; 公司名称; 【家庭1对象】; 高阶二教练; 年收入; 结果期别; 公司规模 (多少人); 性别; 年龄; 华语名字; Emo华语名字; 婚姻; 学号,【高二】事业成就表; 【高二】事业成就表 副本; 教练小组,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+DOE / declaration,✅高二工作坊DOE宣告（开班前）,tblkhMgczjHRF0tu,29,1,0,事业3 百分比; 事业2 百分比; 电子邮件 Email Address; 父记录; 事业2 - 宣告目标 （数字）; 职位Position; 年资历 (年) Work experience (Years); SourceID; 事业性质（行业）Career Type; 复选框; 什么原因想在的关系是这个分数; 家庭新反应对象1 Family Member （关系/ 华语名字     Relationship And Name  ）举例：妈妈/林美铃; 事业1 - 愿景 Career Vision(承诺创造什么价值对于事业，为什么重要？）; 学员; 家庭愿景 Family Vision; 家庭关系从0-10分_; 日期; 事业3-宣告; 公司名字 Company name; 海星宣告; 事业2-宣告定义(赢得标准）; 每周监测点 Weekly Check Point; 教练; 事业1 百分比; 事业3-宣告目标,高阶二工作坊,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+DOE / declaration,✅135-高二工作坊DOE宣告（开班前）,tblDonTPhFNcDVCj,29,1,0,SourceID; 华语名字; 日期; 海星宣告; 家庭关系从0-10分_; 赢的时间 Winning Time（130提早赢 Win-early）; 复选框; 事业3-宣告目标; 电子邮件 Email Address; 收入 Income; 什么原因想在的关系是这个分数; 家庭愿景 Family Vision; 职位Position; 事业3-宣告; 事业2 百分比; 公司名字 Company name; 事业1-宣告定义(赢得标准）; 父记录; 事业性质（行业）Career Type; 事业2 - 宣告目标 （数字）; 年资历 (年) Work experience (Years); 事业1 - 愿景 Career Vision(承诺创造什么价值对于事业，为什么重要？）; 事业1 百分比; 教练; 事业2-宣告定义(赢得标准）,KLCP135 DOE,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Masterlist / final list,🖊️-136-高阶二-Final Masterlist.,tblFDFggY4R0QWHw,141,1,0,"高阶一1call(A,B,C,D); 高阶总费用 (A,B,C,D); 基础离开; 基础 - 全款/订金; 紧急联系人（姓名、关系、电话）; 基础2Call Status
+来的目的、急需解决的问题; 婚姻; IC No; 高阶二1call  (A,B,C,D); 基础确认期别; 酒店费用; 信念系统当班期别 (A,B,C,D); 高阶一已进课室人数; 高阶二1 Call Status (A,B,C,D); 基础2Call; 行业性质; 高阶定金 (A,B,C,D); 付费方式 (1); 高阶二确认当班 (A,B,C,D); 基础确认当班; 文字-5; 公司规模 (多少人); 8%SST; 【基础】Tax invoice name; 性别",❌Whole Masterlist(不能删&不能动任何东西）,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Bible core,🖊️-136-高阶二-【高阶二Backlog】Bible,tblLpp3oe4eUiAdt,141,1,0,"父记录; 高阶二确认当班 (A,B,C,D); 地址; 职位; 高阶二2Call  (A,B,C,D); 高阶一1call(A,B,C,D); 基础2Call; 高阶付费方式_1; 高阶五已经课室; 总费用; 基础1 Call Status; 课室内名单; EMO 英文名字; 高阶一问卷(A,B,C,D); 高阶二后离开(A,B,C,D); 孩子; 高阶学费SST  (A,B,C,D); 高阶二已进课室 (A,B,C,D); 全报; 高阶二后离开原因; 【基础】Tax invoice name; 高阶二总费用  (A,B,C,D); 高阶四已进课室人数; 基础健康面谈; 文字-4",❌Whole Masterlist(不能删&不能动任何东西）,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"
+Result / outcome,🔥-学员海星个人结果,tbl9x3xLfzzlbtMO,5,1,0,教练; 学员; 查找引用; 文本; 行动,表格,,"{
+  ""ok"": false,
+  ""identity"": ""user"",
+  ""error"": {
+    ""type"": ""missing_scope"",
+    ""message"": ""missing required scope(s): base:form:read"",
+    ""hint"": ""run `lark-cli auth login --scope \""base:form:read\""` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.""
+  }
+}"

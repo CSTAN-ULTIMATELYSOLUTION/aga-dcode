@@ -1,0 +1,2694 @@
+{
+  "summary": {
+    "generated_at": "2026-05-29T22:08:33",
+    "base_name": "客服 Backlog",
+    "base_token": "V6SSbZXH2alyQhs5Rv4lD006gKf",
+    "url": "https://zsggz2p1btda.sg.larksuite.com/base/V6SSbZXH2alyQhs5Rv4lD006gKf",
+    "updated": "2026-05-28T18:38:36+08:00",
+    "owner": "AGA TECH SUPPORT",
+    "table_count": 5,
+    "total_fields": 88,
+    "total_views": 9,
+    "total_forms": 0,
+    "dashboard_count": 2,
+    "dashboard_blocks": 11,
+    "workflow_count": 0,
+    "source_role_counts": {
+      "derived/reporting table": 2,
+      "source table": 2,
+      "working table": 1
+    },
+    "categories": {
+      "Class Bible / people source": 5
+    },
+    "field_type_counts": {
+      "lookup": 24,
+      "formula": 12,
+      "text": 21,
+      "select": 27,
+      "number": 4
+    },
+    "table_error": "",
+    "dashboard_error": null,
+    "workflow_error": null
+  },
+  "tables": [
+    {
+      "table_id": "tblPjqpKbr4esCqe",
+      "table_name": "KLCP136 客服Summary - 136 Bible",
+      "source_role": "derived/reporting table",
+      "category": "Class Bible / people source",
+      "field_count": 19,
+      "view_count": 1,
+      "form_count": 0,
+      "field_names": [
+        "KLCP136 学员 - 2 Call",
+        "KLCP136 全款",
+        "KLCP136 确认",
+        "KLCP136 - 3 Message",
+        "KLCP136 学员 - 确认",
+        "KLCP136 教练 - 问卷",
+        "期别",
+        "KLCP136 教练 - 3 Message",
+        "KLCP136 教练 - 全款",
+        "KLCP136 连报",
+        "KLCP136 教练 - 2 Call",
+        "KLCP136 教练 - 连报",
+        "KLCP136 - 2 Call",
+        "KLCP136 教练 - 确认",
+        "KLCP136 学员 - 问卷",
+        "KLCP136 学员 - 全款",
+        "KLCP136 学员 - 3 Message",
+        "KLCP136 学员 - 连报",
+        "KLCP136 问卷"
+      ],
+      "view_names": [
+        "Grid"
+      ],
+      "form_names": [],
+      "field_types": [
+        "lookup",
+        "formula",
+        "formula",
+        "formula",
+        "lookup",
+        "lookup",
+        "text",
+        "lookup",
+        "lookup",
+        "formula",
+        "lookup",
+        "lookup",
+        "formula",
+        "lookup",
+        "lookup",
+        "lookup",
+        "lookup",
+        "lookup",
+        "formula"
+      ],
+      "fields": [
+        {
+          "aggregate": "counta",
+          "from": "✅✅136学员-NEWBIBLE_（Dcode)",
+          "id": "fldmWATiRs",
+          "name": "KLCP136 学员 - 2 Call",
+          "select": "fld4j2Iu4Q",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "expression": "bitable::$table[tblPjqpKbr4esCqe].$field[fld7FLm2GT]+bitable::$table[tblPjqpKbr4esCqe].$field[fldqnql4nq]",
+          "id": "fldcQWftXI",
+          "name": "KLCP136 全款",
+          "type": "formula"
+        },
+        {
+          "expression": "bitable::$table[tblPjqpKbr4esCqe].$field[fldrOd8uiz]+bitable::$table[tblPjqpKbr4esCqe].$field[fldSn5JNpu]",
+          "id": "fld8bgVEWW",
+          "name": "KLCP136 确认",
+          "type": "formula"
+        },
+        {
+          "expression": "bitable::$table[tblPjqpKbr4esCqe].$field[fldJ4P7hJh]+bitable::$table[tblPjqpKbr4esCqe].$field[fldNqrieZq]",
+          "id": "fldQljmYw4",
+          "name": "KLCP136 - 3 Message",
+          "type": "formula"
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136学员-NEWBIBLE_（Dcode)",
+          "id": "fldSn5JNpu",
+          "name": "KLCP136 学员 - 确认",
+          "select": "fldvdJTCU4",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136教练-NEWBIBLE_（Dcode)",
+          "id": "fldFhiMcPi",
+          "name": "KLCP136 教练 - 问卷",
+          "select": "fldoyjxmfW",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "defaultValue": null,
+          "id": "fld8w2QoPV",
+          "name": "期别",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136教练-NEWBIBLE_（Dcode)",
+          "id": "fldJ4P7hJh",
+          "name": "KLCP136 教练 - 3 Message",
+          "select": "fld7yulhMf",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136教练-NEWBIBLE_（Dcode)",
+          "id": "fld7FLm2GT",
+          "name": "KLCP136 教练 - 全款",
+          "select": "fld3gugzDi",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "expression": "bitable::$table[tblPjqpKbr4esCqe].$field[fldVZzAu5R]+bitable::$table[tblPjqpKbr4esCqe].$field[fld1ORyY2V]",
+          "id": "fldg7wd6AY",
+          "name": "KLCP136 连报",
+          "type": "formula"
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136教练-NEWBIBLE_（Dcode)",
+          "id": "fldu8RdXmS",
+          "name": "KLCP136 教练 - 2 Call",
+          "select": "fld4j2Iu4Q",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136教练-NEWBIBLE_（Dcode)",
+          "id": "fldVZzAu5R",
+          "name": "KLCP136 教练 - 连报",
+          "select": "fld5ml0PF2",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "expression": "bitable::$table[tblPjqpKbr4esCqe].$field[fldu8RdXmS]+bitable::$table[tblPjqpKbr4esCqe].$field[fldmWATiRs]",
+          "id": "fldDEe00r2",
+          "name": "KLCP136 - 2 Call",
+          "type": "formula"
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136教练-NEWBIBLE_（Dcode)",
+          "id": "fldrOd8uiz",
+          "name": "KLCP136 教练 - 确认",
+          "select": "fldvdJTCU4",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136学员-NEWBIBLE_（Dcode)",
+          "id": "fldRJTqOnu",
+          "name": "KLCP136 学员 - 问卷",
+          "select": "fldoyjxmfW",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136学员-NEWBIBLE_（Dcode)",
+          "id": "fldqnql4nq",
+          "name": "KLCP136 学员 - 全款",
+          "select": "fldbkQWX10",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136教练-NEWBIBLE_（Dcode)",
+          "id": "fldNqrieZq",
+          "name": "KLCP136 学员 - 3 Message",
+          "select": "fld7yulhMf",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136学员-NEWBIBLE_（Dcode)",
+          "id": "fld1ORyY2V",
+          "name": "KLCP136 学员 - 连报",
+          "select": "fld5ml0PF2",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "expression": "bitable::$table[tblPjqpKbr4esCqe].$field[fldFhiMcPi]+bitable::$table[tblPjqpKbr4esCqe].$field[fldRJTqOnu]",
+          "id": "fldApjsMID",
+          "name": "KLCP136 问卷",
+          "type": "formula"
+        }
+      ],
+      "views": [
+        {
+          "_meta": {
+            "filter": null,
+            "group": [],
+            "sort": [],
+            "visible_fields": "19 fields"
+          },
+          "id": "vewWf5rTiz",
+          "name": "Grid",
+          "type": "grid"
+        }
+      ],
+      "forms": [],
+      "field_error": null,
+      "view_error": null,
+      "form_error": "{\n  \"ok\": false,\n  \"identity\": \"user\",\n  \"error\": {\n    \"type\": \"missing_scope\",\n    \"message\": \"missing required scope(s): base:form:read\",\n    \"hint\": \"run `lark-cli auth login --scope \\\"base:form:read\\\"` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.\"\n  },\n  \"_notice\": {\n    \"update\": {\n      \"command\": \"lark-cli update\",\n      \"current\": \"1.0.42\",\n      \"latest\": \"1.0.43\",\n      \"message\": \"lark-cli 1.0.43 available, current 1.0.42, run: lark-cli update\"\n    }\n  }\n}"
+    },
+    {
+      "table_id": "tblc3T0qqRVOAot7",
+      "table_name": "KLCP137 客服Summary - 136 Bible",
+      "source_role": "derived/reporting table",
+      "category": "Class Bible / people source",
+      "field_count": 19,
+      "view_count": 1,
+      "form_count": 0,
+      "field_names": [
+        "KLCP136 教练 - 确认",
+        "KLCP136 全款",
+        "KLCP136 教练 - 连报",
+        "KLCP136 连报",
+        "KLCP136 问卷",
+        "KLCP136 教练 - 问卷",
+        "KLCP136 教练 - 2 Call",
+        "KLCP136 学员 - 全款",
+        "KLCP136 - 3 Message",
+        "KLCP136 教练 - 3 Message",
+        "KLCP136 - 2 Call",
+        "KLCP136 学员 - 2 Call",
+        "期别",
+        "KLCP136 学员 - 确认",
+        "KLCP136 学员 - 问卷",
+        "KLCP136 学员 - 连报",
+        "KLCP136 学员 - 3 Message",
+        "KLCP136 教练 - 全款",
+        "KLCP136 确认"
+      ],
+      "view_names": [
+        "Grid"
+      ],
+      "form_names": [],
+      "field_types": [
+        "lookup",
+        "formula",
+        "lookup",
+        "formula",
+        "formula",
+        "lookup",
+        "lookup",
+        "lookup",
+        "formula",
+        "lookup",
+        "formula",
+        "lookup",
+        "text",
+        "lookup",
+        "lookup",
+        "lookup",
+        "lookup",
+        "lookup",
+        "formula"
+      ],
+      "fields": [
+        {
+          "aggregate": "counta",
+          "from": "✅✅136教练-NEWBIBLE_（Dcode)",
+          "id": "fldrOd8uiz",
+          "name": "KLCP136 教练 - 确认",
+          "select": "fldvdJTCU4",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "expression": "bitable::$table[tblc3T0qqRVOAot7].$field[fld7FLm2GT]+bitable::$table[tblc3T0qqRVOAot7].$field[fldqnql4nq]",
+          "id": "fldcQWftXI",
+          "name": "KLCP136 全款",
+          "type": "formula"
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136教练-NEWBIBLE_（Dcode)",
+          "id": "fldVZzAu5R",
+          "name": "KLCP136 教练 - 连报",
+          "select": "fld5ml0PF2",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "expression": "bitable::$table[tblc3T0qqRVOAot7].$field[fldVZzAu5R]+bitable::$table[tblc3T0qqRVOAot7].$field[fld1ORyY2V]",
+          "id": "fldg7wd6AY",
+          "name": "KLCP136 连报",
+          "type": "formula"
+        },
+        {
+          "expression": "bitable::$table[tblc3T0qqRVOAot7].$field[fldFhiMcPi]+bitable::$table[tblc3T0qqRVOAot7].$field[fldRJTqOnu]",
+          "id": "fldApjsMID",
+          "name": "KLCP136 问卷",
+          "type": "formula"
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136教练-NEWBIBLE_（Dcode)",
+          "id": "fldFhiMcPi",
+          "name": "KLCP136 教练 - 问卷",
+          "select": "fldoyjxmfW",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136教练-NEWBIBLE_（Dcode)",
+          "id": "fldu8RdXmS",
+          "name": "KLCP136 教练 - 2 Call",
+          "select": "fld4j2Iu4Q",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136学员-NEWBIBLE_（Dcode)",
+          "id": "fldqnql4nq",
+          "name": "KLCP136 学员 - 全款",
+          "select": "fldbkQWX10",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "expression": "bitable::$table[tblc3T0qqRVOAot7].$field[fldJ4P7hJh]+bitable::$table[tblc3T0qqRVOAot7].$field[fldNqrieZq]",
+          "id": "fldQljmYw4",
+          "name": "KLCP136 - 3 Message",
+          "type": "formula"
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136教练-NEWBIBLE_（Dcode)",
+          "id": "fldJ4P7hJh",
+          "name": "KLCP136 教练 - 3 Message",
+          "select": "fld7yulhMf",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "expression": "bitable::$table[tblc3T0qqRVOAot7].$field[fldu8RdXmS]+bitable::$table[tblc3T0qqRVOAot7].$field[fldmWATiRs]",
+          "id": "fldDEe00r2",
+          "name": "KLCP136 - 2 Call",
+          "type": "formula"
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136学员-NEWBIBLE_（Dcode)",
+          "id": "fldmWATiRs",
+          "name": "KLCP136 学员 - 2 Call",
+          "select": "fld4j2Iu4Q",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "defaultValue": null,
+          "id": "fld8w2QoPV",
+          "name": "期别",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136学员-NEWBIBLE_（Dcode)",
+          "id": "fldSn5JNpu",
+          "name": "KLCP136 学员 - 确认",
+          "select": "fldvdJTCU4",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136学员-NEWBIBLE_（Dcode)",
+          "id": "fldRJTqOnu",
+          "name": "KLCP136 学员 - 问卷",
+          "select": "fldoyjxmfW",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136学员-NEWBIBLE_（Dcode)",
+          "id": "fld1ORyY2V",
+          "name": "KLCP136 学员 - 连报",
+          "select": "fld5ml0PF2",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136教练-NEWBIBLE_（Dcode)",
+          "id": "fldNqrieZq",
+          "name": "KLCP136 学员 - 3 Message",
+          "select": "fld7yulhMf",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "aggregate": "counta",
+          "from": "✅✅136教练-NEWBIBLE_（Dcode)",
+          "id": "fld7FLm2GT",
+          "name": "KLCP136 教练 - 全款",
+          "select": "fld3gugzDi",
+          "type": "lookup",
+          "where": {
+            "conditions": [],
+            "logic": "and"
+          }
+        },
+        {
+          "expression": "bitable::$table[tblc3T0qqRVOAot7].$field[fldrOd8uiz]+bitable::$table[tblc3T0qqRVOAot7].$field[fldSn5JNpu]",
+          "id": "fld8bgVEWW",
+          "name": "KLCP136 确认",
+          "type": "formula"
+        }
+      ],
+      "views": [
+        {
+          "_meta": {
+            "filter": null,
+            "group": [],
+            "sort": [],
+            "visible_fields": "19 fields"
+          },
+          "id": "vewWf5rTiz",
+          "name": "Grid",
+          "type": "grid"
+        }
+      ],
+      "forms": [],
+      "field_error": null,
+      "view_error": null,
+      "form_error": "{\n  \"ok\": false,\n  \"identity\": \"user\",\n  \"error\": {\n    \"type\": \"missing_scope\",\n    \"message\": \"missing required scope(s): base:form:read\",\n    \"hint\": \"run `lark-cli auth login --scope \\\"base:form:read\\\"` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.\"\n  },\n  \"_notice\": {\n    \"update\": {\n      \"command\": \"lark-cli update\",\n      \"current\": \"1.0.42\",\n      \"latest\": \"1.0.43\",\n      \"message\": \"lark-cli 1.0.43 available, current 1.0.42, run: lark-cli update\"\n    }\n  }\n}"
+    },
+    {
+      "table_id": "tbl4giebTphkBEOk",
+      "table_name": "✅✅136教练-NEWBIBLE_（Dcode)",
+      "source_role": "source table",
+      "category": "Class Bible / people source",
+      "field_count": 15,
+      "view_count": 3,
+      "form_count": 0,
+      "field_names": [
+        "华语名字",
+        "SourceID",
+        "基础2Call",
+        "基础问卷",
+        "EMO 华语名字",
+        "基础 - 全款/订金",
+        "全报",
+        "基础1call",
+        "基础1 Call Status",
+        "EMO期别",
+        "序号",
+        "基础C1-3信息",
+        "基础确认期别",
+        "基础确认当班",
+        "英文名字"
+      ],
+      "view_names": [
+        "❌Whole Masterlist(不能删&不能动任何东西）",
+        "Grid 2(dashboard_view)",
+        "Grid 2(dashboard_view) Copy"
+      ],
+      "form_names": [],
+      "field_types": [
+        "text",
+        "text",
+        "select",
+        "select",
+        "text",
+        "select",
+        "select",
+        "select",
+        "text",
+        "text",
+        "text",
+        "select",
+        "select",
+        "select",
+        "text"
+      ],
+      "fields": [
+        {
+          "defaultValue": null,
+          "id": "fldcTB02XV",
+          "name": "华语名字",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldp6icFn4",
+          "name": "SourceID",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        },
+        {
+          "defaultValue": null,
+          "id": "fld4j2Iu4Q",
+          "multiple": false,
+          "name": "基础2Call",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "Yes"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "No"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "19/3-  主要emo推荐，公司领导强烈推荐，希望在个人性格，方向，处事态度方面改善提升\n*汉文海星不要沟通连报优惠，报到当场再说，不要感觉hardsell\nafter cp walk 6pm\n无忧无虑的生活，我需要跳出自己的舒适圈和勇敢尝试新事物 . 环游世界，我需要保持我每一年有 300k 以上的年收入 . 可能我的目标会更远大，让我的生命中出现我真正想要和为之奋斗的东西"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "海星觉得不能上可以之后退，客服没有回应"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "确保，海星1call 说照现在看是没有问题"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldoyjxmfW",
+          "multiple": false,
+          "name": "基础问卷",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "Yes"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "No"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldzQPGslc",
+          "name": "EMO 华语名字",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        },
+        {
+          "defaultValue": null,
+          "id": "fld3gugzDi",
+          "multiple": true,
+          "name": "基础 - 全款/订金",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "全款"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "订金"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": ""
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fld5ml0PF2",
+          "multiple": false,
+          "name": "全报",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "基础全款"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "连报"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "连报+全款"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "连报+M"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "连报+M+全款"
+            },
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "高阶"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "高阶+全款"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "高阶+M"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "高阶+M+全款"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "复读基础"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "复读高阶"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "复读-高阶+全款"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "复读高阶+M"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "复读-高阶+M+全款"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "复读-高阶二"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "毕业生-复读基础"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "毕业生-复读基础+复读高阶一"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "毕业生-复读基础+复读高阶二"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fld2UbbAaz",
+          "multiple": false,
+          "name": "基础1call",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "Yes"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "No"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "日期：23/3/26 时间：11.45pm 位置：由于个人因素决定不当班此次的课程\n日期：2/3/26 时间：4.15pm 位置：确认136\n2/3- call 136 at afternoon\n日期：20/1/26 时间：1pm 位置：27/1母亲是会拿cancer报告的，29/1需再去第二次并未确定时间，目前无法确定是否可全程参与课程，会再update\n日期：23/12/25 时间：5.20pm 位置：确认135\n日期：27/11/25 时间：4.50pm 位置：海星还没确定135，有跟emo沟通了要1月的时候才能确定135日期的安排\n27/11- call 135\n日期：11/11/25 时间：1.40pm 位置：12月不行，1月待定，再确认后给我们知道\n11/11- call 135\n日期：19/10/25 时间：11.34am 位置：确认报读，时间待确认\nCall"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "日期：17/3/26 时间：7pm 位置：海星沟通参与不到136，待确认之后\n日期：6/3/26 时间：3.54pm 位置：下星期一海星才能确定他136的安排是否ok，说有可能性会要出国，不过下星期再确定\n5/3- call 136\n日期：11/2/26 时间：3.15pm 位置：通知136时间，待之后安排\n日期：5/11/25 时间：8pm 位置：了解之后的时间中\n日期：13/8/2025 时间：2pm 位置：海星时间还没确定，需要再安排后通知\n13/8 - call cp131 at 2pm"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "日期：5/3/26 时间：12pm 位置：待确认136时间安排，需在开课前几天才能确认安排"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "日期：9/3/26 时间：4.20pm 位置：确认137\n日期：9/3/26 时间：3.20pm 位置：海星28/3全天是不能参与课程的，说是不能推，他说不清楚是要全程的\n9/3- call after lunch"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "日期：9/3/26 时间：3.20pm 位置：确认137\n9/3- call 137 after lunch"
+            },
+            {
+              "hue": "Green",
+              "lightness": "Lighter",
+              "name": "日期：12/3/26 时间：2pm 位置：确认137\n10/3- call 137 at 12/3 after lunch around 2pm"
+            },
+            {
+              "hue": "Carmine",
+              "lightness": "Lighter",
+              "name": "日期：11/3/26 时间：5.40pm 位置：确认137"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldmK0UQAp",
+          "name": "基础1 Call Status",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        },
+        {
+          "defaultValue": null,
+          "id": "fld7jAfirI",
+          "name": "EMO期别",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldp4PT349",
+          "name": "序号",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        },
+        {
+          "defaultValue": null,
+          "id": "fld7yulhMf",
+          "multiple": false,
+          "name": "基础C1-3信息",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "已发出"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "已回复"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldge7cLbJ",
+          "multiple": false,
+          "name": "基础确认期别",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "KLCP131"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "KLCP132"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "KLCP133"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "KLCP135"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "KLCP136"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "KLCP137"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "KLCP138"
+            },
+            {
+              "hue": "Green",
+              "lightness": "Lighter",
+              "name": "KLCP139"
+            },
+            {
+              "hue": "Carmine",
+              "lightness": "Lighter",
+              "name": "KLCP140"
+            },
+            {
+              "hue": "Lime",
+              "lightness": "Lighter",
+              "name": "Yes"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldvdJTCU4",
+          "multiple": false,
+          "name": "基础确认当班",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "确认"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "待确认"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "不当班"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "健康待审核"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "健康不通过"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "未接电话"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "KLCP136"
+            },
+            {
+              "hue": "Green",
+              "lightness": "Lighter",
+              "name": "KLCP137"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fld1hjWNZu",
+          "name": "英文名字",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        }
+      ],
+      "views": [
+        {
+          "_meta": {
+            "filter": null,
+            "group": [],
+            "sort": [],
+            "visible_fields": "14 fields"
+          },
+          "id": "vewY1BFSKo",
+          "name": "❌Whole Masterlist(不能删&不能动任何东西）",
+          "type": "grid"
+        },
+        {
+          "_meta": {
+            "filter": "2 conditions",
+            "group": [
+              "fldvdJTCU4"
+            ],
+            "sort": [],
+            "visible_fields": "6 fields"
+          },
+          "id": "vewyjJP7pm",
+          "name": "Grid 2(dashboard_view)",
+          "type": "grid"
+        },
+        {
+          "_meta": {
+            "filter": "2 conditions",
+            "group": [
+              "fldvdJTCU4"
+            ],
+            "sort": [],
+            "visible_fields": "6 fields"
+          },
+          "id": "vewYsfXS10",
+          "name": "Grid 2(dashboard_view) Copy",
+          "type": "grid"
+        }
+      ],
+      "forms": [],
+      "field_error": null,
+      "view_error": null,
+      "form_error": "{\n  \"ok\": false,\n  \"identity\": \"user\",\n  \"error\": {\n    \"type\": \"missing_scope\",\n    \"message\": \"missing required scope(s): base:form:read\",\n    \"hint\": \"run `lark-cli auth login --scope \\\"base:form:read\\\"` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.\"\n  },\n  \"_notice\": {\n    \"update\": {\n      \"command\": \"lark-cli update\",\n      \"current\": \"1.0.42\",\n      \"latest\": \"1.0.43\",\n      \"message\": \"lark-cli 1.0.43 available, current 1.0.42, run: lark-cli update\"\n    }\n  }\n}"
+    },
+    {
+      "table_id": "tblxsleQz4s0SfWU",
+      "table_name": "✅✅136学员-NEWBIBLE_（Dcode)",
+      "source_role": "source table",
+      "category": "Class Bible / people source",
+      "field_count": 15,
+      "view_count": 3,
+      "form_count": 0,
+      "field_names": [
+        "英文名字",
+        "基础2Call",
+        "基础 - 全款/订金",
+        "序号",
+        "基础确认当班",
+        "SourceID",
+        "EMO 华语名字",
+        "基础1 Call Status",
+        "基础1call",
+        "全报",
+        "华语名字",
+        "基础C1-3信息",
+        "EMO期别",
+        "基础问卷",
+        "基础确认期别"
+      ],
+      "view_names": [
+        "Bible (不能删&不能动任何东西）",
+        "Grid 2(dashboard_view)",
+        "Grid 2(dashboard_view) Copy"
+      ],
+      "form_names": [],
+      "field_types": [
+        "text",
+        "select",
+        "select",
+        "text",
+        "select",
+        "text",
+        "text",
+        "text",
+        "select",
+        "select",
+        "text",
+        "select",
+        "select",
+        "select",
+        "select"
+      ],
+      "fields": [
+        {
+          "defaultValue": null,
+          "id": "fld1hjWNZu",
+          "name": "英文名字",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        },
+        {
+          "defaultValue": null,
+          "id": "fld4j2Iu4Q",
+          "multiple": false,
+          "name": "基础2Call",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "Yes"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "No"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "136 A1 朋友可以一起"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "19/3- 目前没有提升的想法，事业从事美容行业，是资深美容师"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "137 A1 朋友可以一起"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldbkQWX10",
+          "multiple": true,
+          "name": "基础 - 全款/订金",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "全款"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "订金"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": ""
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldp4PT349",
+          "name": "序号",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldvdJTCU4",
+          "multiple": false,
+          "name": "基础确认当班",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "确认"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "待确认"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "不当班"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "健康待审核"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "健康不通过"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "未接电话"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "KLCP136"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldSM5DBJ5",
+          "name": "SourceID",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldzQPGslc",
+          "name": "EMO 华语名字",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldmK0UQAp",
+          "name": "基础1 Call Status",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        },
+        {
+          "defaultValue": null,
+          "id": "fld2UbbAaz",
+          "multiple": false,
+          "name": "基础1call",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "Yes"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "No"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "Call 136"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "Call 137"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "No Call"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "Call"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "Call 138"
+            },
+            {
+              "hue": "Green",
+              "lightness": "Lighter",
+              "name": "No Call\n17/12/25报读过，健康不通过"
+            },
+            {
+              "hue": "Carmine",
+              "lightness": "Lighter",
+              "name": "日期：19/3/26 时间：10.05pm 位置： 确认136\n19/3- happy inform call 136"
+            },
+            {
+              "hue": "Lime",
+              "lightness": "Lighter",
+              "name": "Call 明天12点后call"
+            },
+            {
+              "hue": "Gray",
+              "lightness": "Lighter",
+              "name": "Call 137 下午才联系"
+            },
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "Call 下午"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "Call WhatsApp on 18-3 after 12pm"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "Call 137-whatsapp讯息"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fld5ml0PF2",
+          "multiple": false,
+          "name": "全报",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "基础全款"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "连报"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "连报+全款"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "连报+M"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "连报+M+全款"
+            },
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "高阶"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "高阶+全款"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "高阶+M"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "高阶+M+全款"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "复读基础"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "复读高阶"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "复读-高阶+全款"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "复读高阶+M"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "复读-高阶+M+全款"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "复读-高阶二"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "毕业生-复读基础"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "毕业生-复读基础+复读高阶一"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "毕业生-复读基础+复读高阶二"
+            },
+            {
+              "hue": "Green",
+              "lightness": "Lighter",
+              "name": "全报+M"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldcTB02XV",
+          "name": "华语名字",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        },
+        {
+          "defaultValue": null,
+          "id": "fld7yulhMf",
+          "multiple": false,
+          "name": "基础C1-3信息",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "已发出"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "已回复"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fld7jAfirI",
+          "multiple": false,
+          "name": "EMO期别",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "KLCP131"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "KLCP132"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "KLCP133"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "KLCP135"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "KLCP136"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "KLCP137"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "KLCP138"
+            },
+            {
+              "hue": "Green",
+              "lightness": "Lighter",
+              "name": "KLCP139"
+            },
+            {
+              "hue": "Carmine",
+              "lightness": "Lighter",
+              "name": "KLCP140"
+            },
+            {
+              "hue": "Lime",
+              "lightness": "Lighter",
+              "name": "KLCP108"
+            },
+            {
+              "hue": "Gray",
+              "lightness": "Lighter",
+              "name": "KLCP115"
+            },
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "KLCP35"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "KLCP101"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "KLCP96"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "KLCP26"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "KLCP91"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "KLCP65"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "KLCP69"
+            },
+            {
+              "hue": "Green",
+              "lightness": "Lighter",
+              "name": "KLCP40"
+            },
+            {
+              "hue": "Carmine",
+              "lightness": "Lighter",
+              "name": "KLCP129"
+            },
+            {
+              "hue": "Lime",
+              "lightness": "Lighter",
+              "name": "KLCP109"
+            },
+            {
+              "hue": "Gray",
+              "lightness": "Lighter",
+              "name": "KLCP107"
+            },
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "KLCP123"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "KLCP125"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "KLCP105"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "KLCP 102"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "011-12739137"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldoyjxmfW",
+          "multiple": false,
+          "name": "基础问卷",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "Yes"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "No"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldge7cLbJ",
+          "multiple": false,
+          "name": "基础确认期别",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "KLCP131"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "KLCP132"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "KLCP133"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "KLCP135"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "KLCP136"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "KLCP137"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "KLCP138"
+            },
+            {
+              "hue": "Green",
+              "lightness": "Lighter",
+              "name": "KLCP139"
+            },
+            {
+              "hue": "Carmine",
+              "lightness": "Lighter",
+              "name": "KLCP140"
+            },
+            {
+              "hue": "Lime",
+              "lightness": "Lighter",
+              "name": "Yes"
+            }
+          ],
+          "type": "select"
+        }
+      ],
+      "views": [
+        {
+          "_meta": {
+            "filter": null,
+            "group": [],
+            "sort": [],
+            "visible_fields": "14 fields"
+          },
+          "id": "vewG4RLtnq",
+          "name": "Bible (不能删&不能动任何东西）",
+          "type": "grid"
+        },
+        {
+          "_meta": {
+            "filter": "2 conditions",
+            "group": [
+              "fldvdJTCU4"
+            ],
+            "sort": [],
+            "visible_fields": "6 fields"
+          },
+          "id": "vewYowE7de",
+          "name": "Grid 2(dashboard_view)",
+          "type": "grid"
+        },
+        {
+          "_meta": {
+            "filter": "2 conditions",
+            "group": [
+              "fldvdJTCU4"
+            ],
+            "sort": [],
+            "visible_fields": "6 fields"
+          },
+          "id": "vewPA1f47R",
+          "name": "Grid 2(dashboard_view) Copy",
+          "type": "grid"
+        }
+      ],
+      "forms": [],
+      "field_error": null,
+      "view_error": null,
+      "form_error": "{\n  \"ok\": false,\n  \"identity\": \"user\",\n  \"error\": {\n    \"type\": \"missing_scope\",\n    \"message\": \"missing required scope(s): base:form:read\",\n    \"hint\": \"run `lark-cli auth login --scope \\\"base:form:read\\\"` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.\"\n  },\n  \"_notice\": {\n    \"update\": {\n      \"command\": \"lark-cli update\",\n      \"current\": \"1.0.42\",\n      \"latest\": \"1.0.43\",\n      \"message\": \"lark-cli 1.0.43 available, current 1.0.42, run: lark-cli update\"\n    }\n  }\n}"
+    },
+    {
+      "table_id": "tblpT6tSnNpDtg5p",
+      "table_name": "✅.Dcode海星_基础Whole Bible",
+      "source_role": "working table",
+      "category": "Class Bible / people source",
+      "field_count": 20,
+      "view_count": 1,
+      "form_count": 0,
+      "field_names": [
+        "全报",
+        "总费用",
+        "基础已进课室+英文名字",
+        "【基础】付费方式",
+        "基础问卷",
+        "膳食费用",
+        "英文名字",
+        "结果期别",
+        "EMO 华语名字",
+        "补款",
+        "基础确认期别",
+        "【基础】付费方式_2",
+        "华语名字",
+        "SourceID",
+        "EMO期别",
+        "余款",
+        "酒店费用",
+        "基础学费",
+        "定金",
+        "基础确认当班"
+      ],
+      "view_names": [
+        "Dcode_WholeBible"
+      ],
+      "form_names": [],
+      "field_types": [
+        "select",
+        "number",
+        "text",
+        "select",
+        "select",
+        "select",
+        "text",
+        "select",
+        "text",
+        "number",
+        "select",
+        "select",
+        "text",
+        "text",
+        "select",
+        "number",
+        "select",
+        "text",
+        "number",
+        "select"
+      ],
+      "fields": [
+        {
+          "defaultValue": null,
+          "id": "fldvk3YDeL",
+          "multiple": false,
+          "name": "全报",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "基础全款"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "连报"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "连报+全款"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "连报+M"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "连报+M+全款"
+            },
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "高阶"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "高阶+全款"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "高阶+M"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "高阶+M+全款"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "复读基础"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "复读高阶"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "复读-高阶+全款"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "复读高阶+M"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "复读-高阶+M+全款"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "复读-高阶二"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "毕业生-复读基础"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "毕业生-复读基础+复读高阶一"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "毕业生-复读基础+复读高阶二"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldjpXaLgW",
+          "name": "总费用",
+          "style": {
+            "percentage": false,
+            "precision": 0,
+            "thousands_separator": false,
+            "type": "plain"
+          },
+          "type": "number"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldjiPVnRn",
+          "name": "基础已进课室+英文名字",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        },
+        {
+          "defaultValue": null,
+          "id": "flduEirL8b",
+          "multiple": false,
+          "name": "【基础】付费方式",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "Cash"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "Cheque"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "Online Banking"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "Boldpay"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "Credit Card"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "Deposit Transfer"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "支付宝"
+            },
+            {
+              "hue": "Green",
+              "lightness": "Lighter",
+              "name": "中国银行"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldf8gBPr6",
+          "multiple": false,
+          "name": "基础问卷",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "Yes"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "No"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "flddZQrvoh",
+          "multiple": false,
+          "name": "膳食费用",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "375"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "2300"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "2675"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fld8EKVMDW",
+          "name": "英文名字",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldtwgZH7H",
+          "multiple": false,
+          "name": "结果期别",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "KLCP131"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "KLCP132"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "KLCP133"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "KLCP135"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "KLCP136"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "KLCP137"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "KLCP138"
+            },
+            {
+              "hue": "Green",
+              "lightness": "Lighter",
+              "name": "KLCP139"
+            },
+            {
+              "hue": "Carmine",
+              "lightness": "Lighter",
+              "name": "KLCP140"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldqawRQQU",
+          "name": "EMO 华语名字",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldrAGbU7f",
+          "name": "补款",
+          "style": {
+            "percentage": false,
+            "precision": 0,
+            "thousands_separator": false,
+            "type": "plain"
+          },
+          "type": "number"
+        },
+        {
+          "defaultValue": null,
+          "id": "fld3ybvatf",
+          "multiple": false,
+          "name": "基础确认期别",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "KLCP131"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "KLCP132"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "KLCP133"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "KLCP135"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "KLCP136"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "KLCP137"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "KLCP138"
+            },
+            {
+              "hue": "Green",
+              "lightness": "Lighter",
+              "name": "KLCP139"
+            },
+            {
+              "hue": "Carmine",
+              "lightness": "Lighter",
+              "name": "KLCP140"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldmQg1Bcc",
+          "multiple": false,
+          "name": "【基础】付费方式_2",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "Cash"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "Cheque"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "Online Banking"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "Boldpay"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "Credit Card"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "Deposit Transfer"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "支付宝"
+            },
+            {
+              "hue": "Green",
+              "lightness": "Lighter",
+              "name": "中国银行"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldiefDbsV",
+          "name": "华语名字",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldE1rbg8D",
+          "name": "SourceID",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        },
+        {
+          "defaultValue": null,
+          "id": "fld1Uinf4p",
+          "multiple": false,
+          "name": "EMO期别",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "KLCP131"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "KLCP132"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "KLCP133"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "KLCP135"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "KLCP136"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "KLCP137"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "KLCP138"
+            },
+            {
+              "hue": "Green",
+              "lightness": "Lighter",
+              "name": "KLCP139"
+            },
+            {
+              "hue": "Carmine",
+              "lightness": "Lighter",
+              "name": "KLCP140"
+            },
+            {
+              "hue": "Lime",
+              "lightness": "Lighter",
+              "name": "KLCP108"
+            },
+            {
+              "hue": "Gray",
+              "lightness": "Lighter",
+              "name": "KLCP115"
+            },
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "KLCP35"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "KLCP101"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "KLCP96"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "KLCP26"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "KLCP91"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "KLCP65"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "KLCP69"
+            },
+            {
+              "hue": "Green",
+              "lightness": "Lighter",
+              "name": "KLCP40"
+            },
+            {
+              "hue": "Carmine",
+              "lightness": "Lighter",
+              "name": "KLCP129"
+            },
+            {
+              "hue": "Lime",
+              "lightness": "Lighter",
+              "name": "KLCP109"
+            },
+            {
+              "hue": "Gray",
+              "lightness": "Lighter",
+              "name": "KLCP107"
+            },
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "KLCP123"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "KLCP125"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "KLCP105"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "KLCP 102"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldsJI9eVe",
+          "name": "余款",
+          "style": {
+            "percentage": false,
+            "precision": 9,
+            "thousands_separator": false,
+            "type": "plain"
+          },
+          "type": "number"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldeC279RC",
+          "multiple": false,
+          "name": "酒店费用",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "200"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "240"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "300"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "400"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "250"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "350"
+            },
+            {
+              "hue": "Purple",
+              "lightness": "Lighter",
+              "name": "450"
+            }
+          ],
+          "type": "select"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldviIUBdB",
+          "name": "基础学费",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        },
+        {
+          "defaultValue": null,
+          "id": "fldsn2Rj5g",
+          "name": "定金",
+          "style": {
+            "percentage": false,
+            "precision": 0,
+            "thousands_separator": false,
+            "type": "plain"
+          },
+          "type": "number"
+        },
+        {
+          "defaultValue": null,
+          "id": "fld8Y1mIex",
+          "multiple": false,
+          "name": "基础确认当班",
+          "options": [
+            {
+              "hue": "Blue",
+              "lightness": "Lighter",
+              "name": "确认"
+            },
+            {
+              "hue": "Orange",
+              "lightness": "Lighter",
+              "name": "待确认"
+            },
+            {
+              "hue": "Wathet",
+              "lightness": "Lighter",
+              "name": "不当班"
+            },
+            {
+              "hue": "Yellow",
+              "lightness": "Lighter",
+              "name": "健康待审核"
+            },
+            {
+              "hue": "Turquoise",
+              "lightness": "Lighter",
+              "name": "健康不通过"
+            },
+            {
+              "hue": "Red",
+              "lightness": "Lighter",
+              "name": "未接电话"
+            }
+          ],
+          "type": "select"
+        }
+      ],
+      "views": [
+        {
+          "_meta": {
+            "filter": null,
+            "group": [],
+            "sort": [],
+            "visible_fields": "19 fields"
+          },
+          "id": "vewVDowvDU",
+          "name": "Dcode_WholeBible",
+          "type": "grid"
+        }
+      ],
+      "forms": [],
+      "field_error": null,
+      "view_error": null,
+      "form_error": "{\n  \"ok\": false,\n  \"identity\": \"user\",\n  \"error\": {\n    \"type\": \"missing_scope\",\n    \"message\": \"missing required scope(s): base:form:read\",\n    \"hint\": \"run `lark-cli auth login --scope \\\"base:form:read\\\"` in the background. It blocks and outputs a verification URL — retrieve the URL and open it in a browser to complete login.\"\n  },\n  \"_notice\": {\n    \"update\": {\n      \"command\": \"lark-cli update\",\n      \"current\": \"1.0.42\",\n      \"latest\": \"1.0.43\",\n      \"message\": \"lark-cli 1.0.43 available, current 1.0.42, run: lark-cli update\"\n    }\n  }\n}"
+    }
+  ],
+  "dashboards": [
+    {
+      "dashboard_id": "blktL5YKDScJYUeL",
+      "name": "KLCP136 基础数据图"
+    },
+    {
+      "dashboard_id": "blkYe171BZZt933w",
+      "name": "KLCP137 基础数据图"
+    }
+  ],
+  "all_dashboard_details": [
+    {
+      "dashboard": {
+        "dashboard_id": "blktL5YKDScJYUeL",
+        "name": "KLCP136 基础数据图"
+      },
+      "dashboard_id": "blktL5YKDScJYUeL",
+      "dashboard_name": "KLCP136 基础数据图",
+      "detail": {
+        "ok": true,
+        "identity": "user",
+        "data": {
+          "dashboard": {
+            "blocks": [
+              {
+                "block_id": "chtlghyczZHaZjzpcyW0RkqYs2e",
+                "block_name": "KLCP136",
+                "block_type": "pivot_table"
+              },
+              {
+                "block_id": "chtlgXZAmJTpHzM0WC4LMWeQDyh",
+                "block_name": "KLCP136",
+                "block_type": "pivot_table"
+              },
+              {
+                "block_id": "chtlgvjYMzRv10PDMAnCiqjr5Gh",
+                "block_name": "KLCP136 ",
+                "block_type": "pivot_table"
+              },
+              {
+                "block_id": "chtlgm0PNI9QBOudHlQjPgDR92W",
+                "block_name": "KLCP136 教练海星确认位置",
+                "block_type": "view"
+              },
+              {
+                "block_id": "chtlgOQECQTUC0rWjgnQ2fxCtQb",
+                "block_name": "KLCP136 学员海星确认位置",
+                "block_type": "view"
+              }
+            ],
+            "dashboard_id": "blktL5YKDScJYUeL",
+            "name": "KLCP136 基础数据图",
+            "theme": {
+              "theme_style": "default"
+            }
+          }
+        },
+        "_notice": {
+          "update": {
+            "command": "lark-cli update",
+            "current": "1.0.42",
+            "latest": "1.0.43",
+            "message": "lark-cli 1.0.43 available, current 1.0.42, run: lark-cli update"
+          }
+        }
+      },
+      "detail_error": "",
+      "blocks": [
+        {
+          "block_id": "chtlghyczZHaZjzpcyW0RkqYs2e",
+          "name": "KLCP136",
+          "type": "pivot_table"
+        },
+        {
+          "block_id": "chtlgXZAmJTpHzM0WC4LMWeQDyh",
+          "name": "KLCP136",
+          "type": "pivot_table"
+        },
+        {
+          "block_id": "chtlgvjYMzRv10PDMAnCiqjr5Gh",
+          "name": "KLCP136 ",
+          "type": "pivot_table"
+        },
+        {
+          "block_id": "chtlgm0PNI9QBOudHlQjPgDR92W",
+          "name": "KLCP136 教练海星确认位置",
+          "type": "view"
+        },
+        {
+          "block_id": "chtlgOQECQTUC0rWjgnQ2fxCtQb",
+          "name": "KLCP136 学员海星确认位置",
+          "type": "view"
+        }
+      ],
+      "block_error": null,
+      "block_count": 5
+    },
+    {
+      "dashboard": {
+        "dashboard_id": "blkYe171BZZt933w",
+        "name": "KLCP137 基础数据图"
+      },
+      "dashboard_id": "blkYe171BZZt933w",
+      "dashboard_name": "KLCP137 基础数据图",
+      "detail": {
+        "ok": true,
+        "identity": "user",
+        "data": {
+          "dashboard": {
+            "blocks": [
+              {
+                "block_id": "chtlgIgw8zBBJiQnAB3IAolRUxe",
+                "block_name": "Text",
+                "block_type": "text"
+              },
+              {
+                "block_id": "chtlgFd9YGVtBjQBtWxZxf2htnc",
+                "block_name": "KLCP136",
+                "block_type": "pivot_table"
+              },
+              {
+                "block_id": "chtlg6F0zyuac9NRYwAFqPWwGIh",
+                "block_name": "KLCP136",
+                "block_type": "pivot_table"
+              },
+              {
+                "block_id": "chtlg9iuCLLy1pd024sImq6NNAc",
+                "block_name": "KLCP136",
+                "block_type": "pivot_table"
+              },
+              {
+                "block_id": "chtlgbGfd70rgl8VrGDjCnXf9Se",
+                "block_name": "KLCP136 教练海星确认位置",
+                "block_type": "view"
+              },
+              {
+                "block_id": "chtlgCLgQ1BJlbP9upnw3kpV3yc",
+                "block_name": "KLCP136 学员海星确认位置",
+                "block_type": "view"
+              }
+            ],
+            "dashboard_id": "blkYe171BZZt933w",
+            "name": "KLCP137 基础数据图",
+            "theme": {
+              "theme_style": "default"
+            }
+          }
+        },
+        "_notice": {
+          "update": {
+            "command": "lark-cli update",
+            "current": "1.0.42",
+            "latest": "1.0.43",
+            "message": "lark-cli 1.0.43 available, current 1.0.42, run: lark-cli update"
+          }
+        }
+      },
+      "detail_error": "",
+      "blocks": [
+        {
+          "block_id": "chtlgIgw8zBBJiQnAB3IAolRUxe",
+          "name": "Text",
+          "type": "text"
+        },
+        {
+          "block_id": "chtlgFd9YGVtBjQBtWxZxf2htnc",
+          "name": "KLCP136",
+          "type": "pivot_table"
+        },
+        {
+          "block_id": "chtlg6F0zyuac9NRYwAFqPWwGIh",
+          "name": "KLCP136",
+          "type": "pivot_table"
+        },
+        {
+          "block_id": "chtlg9iuCLLy1pd024sImq6NNAc",
+          "name": "KLCP136",
+          "type": "pivot_table"
+        },
+        {
+          "block_id": "chtlgbGfd70rgl8VrGDjCnXf9Se",
+          "name": "KLCP136 教练海星确认位置",
+          "type": "view"
+        },
+        {
+          "block_id": "chtlgCLgQ1BJlbP9upnw3kpV3yc",
+          "name": "KLCP136 学员海星确认位置",
+          "type": "view"
+        }
+      ],
+      "block_error": null,
+      "block_count": 6
+    }
+  ],
+  "workflows": []
+}
