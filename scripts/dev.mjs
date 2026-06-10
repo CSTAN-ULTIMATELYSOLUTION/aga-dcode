@@ -1,4 +1,14 @@
 import { spawn } from 'node:child_process';
+import { loadEnvFiles } from './env-loader.mjs';
+
+loadEnvFiles();
+
+const loadedSupabaseEnv = Boolean(process.env.SUPABASE_URL && (process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SERVICE_KEY));
+console.log(
+  loadedSupabaseEnv
+    ? 'Local Supabase env loaded for check-in API.'
+    : 'No local Supabase env found. Check-in API will use localhost demo fallback.'
+);
 
 const children = [
   spawn(process.execPath, ['server/index.mjs'], { stdio: 'inherit' }),
