@@ -5,7 +5,9 @@ import {
   ATTENDEE_FIELDS,
   buildAttendeeResponse,
   buildCheckinUpsert,
+  getLocalDemoCheckinRecord,
   normalizePhone,
+  saveLocalDemoCheckinRecord,
   validateCheckinPayload,
 } from '../api/_checkin-core.mjs';
 
@@ -82,4 +84,31 @@ test('buildAttendeeResponse exposes only attendee-safe fields', () => {
   assert.equal(response.paymentStatus, 'Approved Deposit');
   assert.equal(response.service_role_secret, undefined);
   assert.equal(response.internal_note, undefined);
+});
+
+test('local demo check-in store returns seeded attendee by phone', async () => {
+  const row = await getLocalDemoCheckinRecord({ cohortCode: 'CP138', phone: '012-555 0138' });
+
+  assert.equal(row.full_name, 'Tan Mei Xin');
+  assert.equal(row.normalized_phone, '60125550138');
+  assert.equal(row.payment_status, 'Approved Full Payment');
+});
+
+test('local demo check-in store saves unknown attendee check-in', async () => {
+  const row = await saveLocalDemoCheckinRecord({
+    cohortCode: 'CP138',
+    phone: '012-333 8888',
+    fullName: 'Demo Student',
+    icOrPassport: 'A8888888',
+    eInvoiceName: 'Demo Student',
+    eInvoiceTin: 'C8888888888',
+    eInvoiceIdType: 'NRIC',
+    eInvoiceIdNo: 'A8888888',
+    eInvoiceAddress: 'Kuala Lumpur',
+    eInvoiceEmail: 'demo@example.com',
+  });
+
+  assert.equal(row.full_name, 'Demo Student');
+  assert.equal(row.payment_status, 'unknown');
+  assert.ok(row.checked_in_at);
 });

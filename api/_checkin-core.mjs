@@ -85,6 +85,14 @@ function clean(value) {
   return String(value ?? '').trim();
 }
 
+function hasSupabaseEnv() {
+  return Boolean(clean(process.env.SUPABASE_URL) && clean(process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SERVICE_KEY));
+}
+
+function isLocalHost(host = '') {
+  return /^(localhost|127\.0\.0\.1|\[::1\])(?::\d+)?$/i.test(clean(host));
+}
+
 function requireEnv() {
   const supabaseUrl = clean(process.env.SUPABASE_URL).replace(/\/+$/, '');
   const serviceRoleKey = clean(process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SERVICE_KEY);
@@ -94,6 +102,38 @@ function requireEnv() {
     throw error;
   }
   return { supabaseUrl, serviceRoleKey };
+}
+
+const localDemoRows = new Map();
+
+function seedLocalDemoRows() {
+  if (localDemoRows.size) return;
+  const row = {
+    id: 'local-demo-cp138-tan-mei-xin',
+    cohort_code: 'CP138',
+    phone: '012-555 0138',
+    normalized_phone: '60125550138',
+    full_name: 'Tan Mei Xin',
+    english_name: 'Mei Xin Tan',
+    chinese_name: 'Chen Mei Xin',
+    email: 'mei@example.com',
+    ic_or_passport: 'A1234567',
+    date_of_birth: '1999-02-03',
+    gender: 'Female',
+    e_invoice_name: 'Tan Mei Xin',
+    e_invoice_tin: 'C1234567890',
+    e_invoice_id_type: 'NRIC',
+    e_invoice_id_no: 'A1234567',
+    e_invoice_address: 'Dcode KL Center, Kuala Lumpur',
+    e_invoice_email: 'einvoice@example.com',
+    payment_status: 'Approved Full Payment',
+    payment_amount: 'RM 3,600',
+    payment_reference: 'BANKIN-S2599000',
+    payment_note: 'Demo local record. Finance fields are read-only.',
+    info_completed_at: null,
+    checked_in_at: null,
+  };
+  localDemoRows.set(`${row.cohort_code}:${row.normalized_phone}`, row);
 }
 
 export function normalizePhone(phone) {
@@ -147,6 +187,37 @@ export function buildAttendeeResponse(row = null) {
     }
   }
   return response;
+}
+
+export async function getLocalDemoCheckinRecord({ cohortCode, phone }) {
+  seedLocalDemoRows();
+  const key = `${clean(cohortCode).toUpperCase()}:${normalizePhone(phone)}`;
+  return localDemoRows.get(key) || null;
+}
+
+export async function saveLocalDemoCheckinRecord(payload = {}) {
+  seedLocalDemoRows();
+  const validation = validateCheckinPayload(payload);
+  if (!validation.valid) {
+    const error = new Error('Please complete required information before check-in.');
+    error.statusCode = 422;
+    error.errors = validation.errors;
+    throw error;
+  }
+  const key = `${clean(payload.cohortCode).toUpperCase()}:${normalizePhone(payload.phone)}`;
+  const existing = localDemoRows.get(key) || {};
+  const saved = {
+    ...existing,
+    ...buildCheckinUpsert(payload),
+    id: existing.id || `local-demo-${Date.now()}`,
+    payment_status: existing.payment_status || 'unknown',
+    payment_amount: existing.payment_amount || null,
+    payment_reference: existing.payment_reference || null,
+    payment_note: existing.payment_note || 'Local demo record. Finance will update payment details separately.',
+    created_at: existing.created_at || new Date().toISOString(),
+  };
+  localDemoRows.set(key, saved);
+  return saved;
 }
 
 function sendJson(response, status, payload) {
@@ -254,17 +325,19 @@ export async function handleCheckinRequest(request, response) {
   }
   try {
     const url = new URL(request.url, `http://${request.headers.host || 'localhost'}`);
+    const useLocalDemo = !hasSupabaseEnv() && isLocalHost(request.headers.host);
     if (request.method === 'GET') {
-      const row = await getCheckinRecord({
+      const lookup = {
         cohortCode: url.searchParams.get('cohortCode'),
         phone: url.searchParams.get('phone'),
-      });
+      };
+      const row = useLocalDemo ? await getLocalDemoCheckinRecord(lookup) : await getCheckinRecord(lookup);
       sendJson(response, 200, { found: Boolean(row), person: buildAttendeeResponse(row) });
       return;
     }
     if (request.method === 'POST') {
       const body = await readBody(request);
-      const row = await saveCheckinRecord(body);
+      const row = useLocalDemo ? await saveLocalDemoCheckinRecord(body) : await saveCheckinRecord(body);
       sendJson(response, 200, { ok: true, person: buildAttendeeResponse(row) });
       return;
     }
