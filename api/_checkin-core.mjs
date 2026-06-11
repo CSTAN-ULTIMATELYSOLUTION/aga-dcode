@@ -10,6 +10,12 @@ export const ATTENDEE_FIELDS = [
   'icOrPassport',
   'dateOfBirth',
   'gender',
+  'jobTitle',
+  'companyName',
+  'industry',
+  'employmentStatus',
+  'workExperience',
+  'companyAddress',
   'eInvoiceName',
   'eInvoiceTin',
   'eInvoiceIdType',
@@ -35,6 +41,12 @@ const attendeeToColumn = {
   icOrPassport: 'ic_or_passport',
   dateOfBirth: 'date_of_birth',
   gender: 'gender',
+  jobTitle: 'job_title',
+  companyName: 'company_name',
+  industry: 'industry',
+  employmentStatus: 'employment_status',
+  workExperience: 'work_experience',
+  companyAddress: 'company_address',
   eInvoiceName: 'e_invoice_name',
   eInvoiceTin: 'e_invoice_tin',
   eInvoiceIdType: 'e_invoice_id_type',
@@ -60,6 +72,12 @@ const editableColumns = {
   icOrPassport: 'ic_or_passport',
   dateOfBirth: 'date_of_birth',
   gender: 'gender',
+  jobTitle: 'job_title',
+  companyName: 'company_name',
+  industry: 'industry',
+  employmentStatus: 'employment_status',
+  workExperience: 'work_experience',
+  companyAddress: 'company_address',
   eInvoiceName: 'e_invoice_name',
   eInvoiceTin: 'e_invoice_tin',
   eInvoiceIdType: 'e_invoice_id_type',
@@ -120,6 +138,12 @@ function seedLocalDemoRows() {
     ic_or_passport: 'A1234567',
     date_of_birth: '1999-02-03',
     gender: 'Female',
+    job_title: 'Data Analyst',
+    company_name: 'Dcode Academy',
+    industry: 'Education',
+    employment_status: 'Full-time',
+    work_experience: '3 years',
+    company_address: 'Kuala Lumpur',
     e_invoice_name: 'Tan Mei Xin',
     e_invoice_tin: 'C1234567890',
     e_invoice_id_type: 'NRIC',
@@ -264,6 +288,18 @@ function supabaseHeaders(serviceRoleKey, extra = {}) {
   };
 }
 
+const baseSelectColumns = 'id,cohort_code,phone,normalized_phone,full_name,english_name,chinese_name,email,ic_or_passport,date_of_birth,gender,e_invoice_name,e_invoice_tin,e_invoice_id_type,e_invoice_id_no,e_invoice_address,e_invoice_email,payment_status,payment_amount,payment_reference,payment_note,info_completed_at,checked_in_at';
+const jobSelectColumns = 'job_title,company_name,industry,employment_status,work_experience,company_address';
+const fullSelectColumns = `${baseSelectColumns},${jobSelectColumns}`;
+const optionalJobColumns = new Set([
+  'job_title',
+  'company_name',
+  'industry',
+  'employment_status',
+  'work_experience',
+  'company_address',
+]);
+
 async function supabaseRequest(path, options = {}) {
   const { supabaseUrl, serviceRoleKey } = requireEnv();
   const response = await fetch(`${supabaseUrl}/rest/v1/${path}`, {
@@ -281,6 +317,15 @@ async function supabaseRequest(path, options = {}) {
   return payload;
 }
 
+function isMissingOptionalJobColumn(error) {
+  const message = `${error?.message || ''} ${JSON.stringify(error?.details || {})}`;
+  return error?.statusCode === 400 && [...optionalJobColumns].some((column) => message.includes(column));
+}
+
+function withoutOptionalJobColumns(row) {
+  return Object.fromEntries(Object.entries(row).filter(([key]) => !optionalJobColumns.has(key)));
+}
+
 export async function getCheckinRecord({ cohortCode, phone }) {
   const normalizedPhone = normalizePhone(phone);
   if (!clean(cohortCode) || !normalizedPhone) {
@@ -289,12 +334,19 @@ export async function getCheckinRecord({ cohortCode, phone }) {
     throw error;
   }
   const query = new URLSearchParams({
-    select: 'id,cohort_code,phone,normalized_phone,full_name,english_name,chinese_name,email,ic_or_passport,date_of_birth,gender,e_invoice_name,e_invoice_tin,e_invoice_id_type,e_invoice_id_no,e_invoice_address,e_invoice_email,payment_status,payment_amount,payment_reference,payment_note,info_completed_at,checked_in_at',
+    select: fullSelectColumns,
     cohort_code: `eq.${clean(cohortCode).toUpperCase()}`,
     normalized_phone: `eq.${normalizedPhone}`,
     limit: '1',
   });
-  const rows = await supabaseRequest(`person_checkins?${query}`);
+  let rows;
+  try {
+    rows = await supabaseRequest(`person_checkins?${query}`);
+  } catch (error) {
+    if (!isMissingOptionalJobColumn(error)) throw error;
+    query.set('select', baseSelectColumns);
+    rows = await supabaseRequest(`person_checkins?${query}`);
+  }
   return rows?.[0] || null;
 }
 
@@ -308,13 +360,25 @@ export async function saveCheckinRecord(payload = {}) {
   }
   const query = new URLSearchParams({
     on_conflict: 'normalized_phone',
-    select: 'id,cohort_code,phone,normalized_phone,full_name,english_name,chinese_name,email,ic_or_passport,date_of_birth,gender,e_invoice_name,e_invoice_tin,e_invoice_id_type,e_invoice_id_no,e_invoice_address,e_invoice_email,payment_status,payment_amount,payment_reference,payment_note,info_completed_at,checked_in_at',
+    select: fullSelectColumns,
   });
-  const rows = await supabaseRequest(`person_checkins?${query}`, {
-    method: 'POST',
-    headers: { prefer: 'resolution=merge-duplicates,return=representation' },
-    body: JSON.stringify(buildCheckinUpsert(payload)),
-  });
+  const row = buildCheckinUpsert(payload);
+  let rows;
+  try {
+    rows = await supabaseRequest(`person_checkins?${query}`, {
+      method: 'POST',
+      headers: { prefer: 'resolution=merge-duplicates,return=representation' },
+      body: JSON.stringify(row),
+    });
+  } catch (error) {
+    if (!isMissingOptionalJobColumn(error)) throw error;
+    query.set('select', baseSelectColumns);
+    rows = await supabaseRequest(`person_checkins?${query}`, {
+      method: 'POST',
+      headers: { prefer: 'resolution=merge-duplicates,return=representation' },
+      body: JSON.stringify(withoutOptionalJobColumns(row)),
+    });
+  }
   return rows?.[0] || null;
 }
 

@@ -15,6 +15,12 @@ create table if not exists public.person_checkins (
   ic_or_passport text,
   date_of_birth date,
   gender text,
+  job_title text,
+  company_name text,
+  industry text,
+  employment_status text,
+  work_experience text,
+  company_address text,
   e_invoice_name text,
   e_invoice_tin text,
   e_invoice_id_type text,
@@ -31,6 +37,13 @@ create table if not exists public.person_checkins (
   updated_at timestamptz not null default now(),
   constraint person_checkins_normalized_phone_key unique (normalized_phone)
 );
+
+alter table public.person_checkins add column if not exists job_title text;
+alter table public.person_checkins add column if not exists company_name text;
+alter table public.person_checkins add column if not exists industry text;
+alter table public.person_checkins add column if not exists employment_status text;
+alter table public.person_checkins add column if not exists work_experience text;
+alter table public.person_checkins add column if not exists company_address text;
 
 alter table public.person_checkins enable row level security;
 

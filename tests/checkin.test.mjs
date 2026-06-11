@@ -49,6 +49,12 @@ test('buildCheckinUpsert writes attendee fields and preserves admin-only payment
       icOrPassport: 'A1234567',
       dateOfBirth: '1999-02-03',
       gender: 'Female',
+      jobTitle: 'Data Analyst',
+      companyName: 'Dcode Academy',
+      industry: 'Education',
+      employmentStatus: 'Full-time',
+      workExperience: '3 years',
+      companyAddress: 'Kuala Lumpur',
       eInvoiceName: 'Tan Mei Xin',
       eInvoiceTin: 'C1234567890',
       eInvoiceIdType: 'NRIC',
@@ -63,6 +69,8 @@ test('buildCheckinUpsert writes attendee fields and preserves admin-only payment
 
   assert.equal(row.normalized_phone, '60125550138');
   assert.equal(row.full_name, 'Tan Mei Xin');
+  assert.equal(row.job_title, 'Data Analyst');
+  assert.equal(row.company_name, 'Dcode Academy');
   assert.equal(row.checked_in_at, now);
   assert.equal(row.info_completed_at, now);
   assert.equal(Object.hasOwn(row, 'payment_status'), false);
@@ -75,6 +83,8 @@ test('buildAttendeeResponse exposes only attendee-safe fields', () => {
     cohort_code: 'CP138',
     phone: '012-555 0138',
     full_name: 'Tan Mei Xin',
+    job_title: 'Data Analyst',
+    company_name: 'Dcode Academy',
     payment_status: 'Approved Deposit',
     service_role_secret: 'never',
     internal_note: 'admin only',
@@ -82,6 +92,8 @@ test('buildAttendeeResponse exposes only attendee-safe fields', () => {
 
   assert.deepEqual(Object.keys(response).sort(), [...ATTENDEE_FIELDS].sort());
   assert.equal(response.paymentStatus, 'Approved Deposit');
+  assert.equal(response.jobTitle, 'Data Analyst');
+  assert.equal(response.companyName, 'Dcode Academy');
   assert.equal(response.service_role_secret, undefined);
   assert.equal(response.internal_note, undefined);
 });

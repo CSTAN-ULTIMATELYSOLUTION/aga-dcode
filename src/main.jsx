@@ -508,6 +508,12 @@ function emptyCheckinForm(cohortCode, phone = '') {
     icOrPassport: '',
     dateOfBirth: '',
     gender: '',
+    jobTitle: '',
+    companyName: '',
+    industry: '',
+    employmentStatus: '',
+    workExperience: '',
+    companyAddress: '',
     eInvoiceName: '',
     eInvoiceTin: '',
     eInvoiceIdType: 'NRIC',
@@ -693,6 +699,44 @@ function CheckinPage({ cohortCode }) {
                     <option>Male</option>
                     <option>Prefer not to say</option>
                   </select>
+                </label>
+              </div>
+            </section>
+
+            <section>
+              <h2>Personal Job Information</h2>
+              <div className="form-grid">
+                <label>
+                  Job title
+                  <input value={form.jobTitle || ''} onChange={(event) => updateForm('jobTitle', event.target.value)} placeholder="Data analyst, founder, student..." />
+                </label>
+                <label>
+                  Company name
+                  <input value={form.companyName || ''} onChange={(event) => updateForm('companyName', event.target.value)} placeholder="Company or business name" />
+                </label>
+                <label>
+                  Industry
+                  <input value={form.industry || ''} onChange={(event) => updateForm('industry', event.target.value)} placeholder="Education, finance, retail..." />
+                </label>
+                <label>
+                  Employment status
+                  <select value={form.employmentStatus || ''} onChange={(event) => updateForm('employmentStatus', event.target.value)}>
+                    <option value="">Choose</option>
+                    <option>Full-time</option>
+                    <option>Part-time</option>
+                    <option>Self-employed</option>
+                    <option>Business owner</option>
+                    <option>Student</option>
+                    <option>Not working</option>
+                  </select>
+                </label>
+                <label>
+                  Work experience
+                  <input value={form.workExperience || ''} onChange={(event) => updateForm('workExperience', event.target.value)} placeholder="3 years" />
+                </label>
+                <label className="wide">
+                  Company address
+                  <textarea value={form.companyAddress || ''} onChange={(event) => updateForm('companyAddress', event.target.value)} placeholder="Office or business address" />
                 </label>
               </div>
             </section>
