@@ -1,7 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { getMissingCheckinFields, isCheckinFormReady } from '../src/checkin-form.mjs';
+import {
+  applyMockPayment,
+  getMissingCheckinFields,
+  isCheckinFormReady,
+  shouldShowMockPayButton,
+} from '../src/checkin-form.mjs';
 
 const completeForm = {
   phone: '012-333 8888',
@@ -23,4 +28,22 @@ test('isCheckinFormReady blocks check-in when e-invoice information is incomplet
 test('isCheckinFormReady allows check-in when all required fields are complete', () => {
   assert.equal(isCheckinFormReady(completeForm), true);
   assert.deepEqual(getMissingCheckinFields(completeForm), []);
+});
+
+test('shouldShowMockPayButton shows for unpaid or pending payment statuses', () => {
+  assert.equal(shouldShowMockPayButton({ paymentStatus: 'Pending Finance Review' }), true);
+  assert.equal(shouldShowMockPayButton({ paymentStatus: 'unknown' }), true);
+  assert.equal(shouldShowMockPayButton({ paymentStatus: 'Approved Full Payment' }), false);
+});
+
+test('applyMockPayment updates only the attendee-facing payment state', () => {
+  const paid = applyMockPayment({
+    paymentStatus: 'Pending Finance Review',
+    paymentAmount: 'RM 500',
+    paymentReference: 'BANKIN-DEMO-001',
+  });
+
+  assert.equal(paid.paymentStatus, 'Mock Payment Completed');
+  assert.equal(paid.paymentReference, 'MOCK-PAYMENT');
+  assert.equal(paid.paymentNote, 'Mock payment only. Finance approval still needs admin verification.');
 });

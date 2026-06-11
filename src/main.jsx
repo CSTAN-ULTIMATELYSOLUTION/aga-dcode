@@ -2,7 +2,12 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import QRCode from 'qrcode';
 import { getAdminCredentials, validateAdminLogin } from './auth.mjs';
-import { getMissingCheckinFields, isCheckinFormReady } from './checkin-form.mjs';
+import {
+  applyMockPayment,
+  getMissingCheckinFields,
+  isCheckinFormReady,
+  shouldShowMockPayButton,
+} from './checkin-form.mjs';
 import {
   AlertCircle,
   ArrowRight,
@@ -603,6 +608,7 @@ function CheckinPage({ cohortCode }) {
   const showForm = lookupState === 'found' || lookupState === 'missing';
   const missingCheckinFields = getMissingCheckinFields(form);
   const canConfirmCheckin = isCheckinFormReady(form);
+  const showMockPayButton = shouldShowMockPayButton(form);
   const paymentMeta = [
     form.paymentAmount,
     form.paymentReference,
@@ -733,9 +739,24 @@ function CheckinPage({ cohortCode }) {
 
             <section className="payment-readonly">
               <h2>Payment Status</h2>
-              <div>
-                <strong>{form.paymentStatus || 'unknown'}</strong>
-                <span>{paymentMeta || 'Finance will update payment details separately.'}</span>
+              <div className="payment-status-box">
+                <div>
+                  <strong>{form.paymentStatus || 'unknown'}</strong>
+                  <span>{paymentMeta || 'Finance will update payment details separately.'}</span>
+                </div>
+                {showMockPayButton && (
+                  <button
+                    className="mock-pay-button"
+                    type="button"
+                    onClick={() => {
+                      setForm((current) => applyMockPayment(current));
+                      setNotice('Mock payment completed. Finance approval still needs admin verification.');
+                    }}
+                  >
+                    <WalletCards size={16} />
+                    Mock Pay Now
+                  </button>
+                )}
               </div>
             </section>
 
