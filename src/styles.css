@@ -3119,6 +3119,22 @@ th {
   opacity: 0.72;
 }
 
+.confirm-checkin:disabled {
+  cursor: not-allowed;
+  background: #98a2b3;
+}
+
+.checkin-blocker {
+  padding: 12px 14px;
+  border: 1px solid #f9d89b;
+  border-radius: 7px;
+  color: #92400e;
+  background: var(--amber-soft);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
 .success-card {
   margin-top: 18px;
   display: flex;

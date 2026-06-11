@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import QRCode from 'qrcode';
 import { getAdminCredentials, validateAdminLogin } from './auth.mjs';
+import { getMissingCheckinFields, isCheckinFormReady } from './checkin-form.mjs';
 import {
   AlertCircle,
   ArrowRight,
@@ -600,6 +601,8 @@ function CheckinPage({ cohortCode }) {
   }
 
   const showForm = lookupState === 'found' || lookupState === 'missing';
+  const missingCheckinFields = getMissingCheckinFields(form);
+  const canConfirmCheckin = isCheckinFormReady(form);
   const paymentMeta = [
     form.paymentAmount,
     form.paymentReference,
@@ -736,7 +739,13 @@ function CheckinPage({ cohortCode }) {
               </div>
             </section>
 
-            <button className="confirm-checkin" type="submit" disabled={saving}>
+            {!canConfirmCheckin && (
+              <div className="checkin-blocker">
+                Complete before check-in: {missingCheckinFields.join(', ')}.
+              </div>
+            )}
+
+            <button className="confirm-checkin" type="submit" disabled={saving || !canConfirmCheckin}>
               <ClipboardCheck size={18} />
               {saving ? 'Confirming' : 'Confirm & Check In'}
             </button>
