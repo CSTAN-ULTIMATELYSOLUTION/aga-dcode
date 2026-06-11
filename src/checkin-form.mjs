@@ -34,3 +34,7 @@ export function applyMockPayment(form = {}) {
     paymentNote: 'Mock payment only. Finance approval still needs admin verification.',
   };
 }
+
+export function isAlreadyCheckedIn(form = {}) {
+  return Boolean(String(form.checkedInAt ?? '').trim());
+}

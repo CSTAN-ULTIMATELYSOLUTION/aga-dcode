@@ -5,6 +5,7 @@ import { getAdminCredentials, validateAdminLogin } from './auth.mjs';
 import {
   applyMockPayment,
   getMissingCheckinFields,
+  isAlreadyCheckedIn,
   isCheckinFormReady,
   shouldShowMockPayButton,
 } from './checkin-form.mjs';
@@ -572,9 +573,14 @@ function CheckinPage({ cohortCode }) {
     setSuccess(null);
     try {
       const result = await fetchJson(`/api/checkin?cohortCode=${encodeURIComponent(cohortCode)}&phone=${encodeURIComponent(phone)}`);
-      setForm(personToCheckinForm(cohortCode, phone, result.person));
+      const nextForm = personToCheckinForm(cohortCode, phone, result.person);
+      setForm(nextForm);
       setLookupState(result.found ? 'found' : 'missing');
-      setNotice(result.found ? 'Please check your information before check-in.' : 'We could not find complete info. Fill this before check-in.');
+      if (result.found && isAlreadyCheckedIn(nextForm)) {
+        setNotice(`Already checked in at ${formatCheckinTime(nextForm.checkedInAt)}. You can still edit the information below if needed.`);
+      } else {
+        setNotice(result.found ? 'Please check your information before check-in.' : 'We could not find complete info. Fill this before check-in.');
+      }
     } catch (error) {
       setLookupState('error');
       setNotice(`Lookup failed: ${error.message}`);
@@ -611,7 +617,9 @@ function CheckinPage({ cohortCode }) {
     }
   }
 
-  const showForm = lookupState === 'found' || lookupState === 'missing';
+  const alreadyCheckedIn = isAlreadyCheckedIn(form);
+  const showSuccess = Boolean(success);
+  const showForm = !showSuccess && (lookupState === 'found' || lookupState === 'missing');
   const missingCheckinFields = getMissingCheckinFields(form);
   const canConfirmCheckin = isCheckinFormReady(form);
   const showMockPayButton = shouldShowMockPayButton(form);
@@ -661,6 +669,17 @@ function CheckinPage({ cohortCode }) {
 
         {showForm && (
           <form className="checkin-form" onSubmit={submitCheckin}>
+            {alreadyCheckedIn && (
+              <section className="already-checkin-card">
+                <BadgeCheck size={22} />
+                <div>
+                  <h2>Already Checked In</h2>
+                  <p>{form.fullName || 'This person'} checked in at {formatCheckinTime(form.checkedInAt)}.</p>
+                  <p>You can edit the information below and confirm again to save the latest details.</p>
+                </div>
+              </section>
+            )}
+
             <section>
               <h2>Basic Information</h2>
               <div className="form-grid">
@@ -817,13 +836,36 @@ function CheckinPage({ cohortCode }) {
           </form>
         )}
 
-        {success && (
-          <section className="success-card">
-            <BadgeCheck size={24} />
-            <div>
-              <h2>Checked in</h2>
-              <p>{success.fullName} / {success.phone}</p>
-              <p>{success.cohortCode} / {formatCheckinTime(success.checkedInAt)} / Payment: {success.paymentStatus || 'unknown'}</p>
+        {showSuccess && (
+          <section className="success-card success-page">
+            <div className="success-icon">
+              <BadgeCheck size={36} />
+            </div>
+            <div className="success-content">
+              <span>Check-in complete</span>
+              <h2>Check-In Successful</h2>
+              <p>{success.fullName || 'Attendee'} is checked in for {success.cohortCode || cohortCode}.</p>
+              <dl>
+                <div>
+                  <dt>Name</dt>
+                  <dd>{success.fullName || '-'}</dd>
+                </div>
+                <div>
+                  <dt>Phone</dt>
+                  <dd>{success.phone || '-'}</dd>
+                </div>
+                <div>
+                  <dt>Check-in time</dt>
+                  <dd>{formatCheckinTime(success.checkedInAt) || '-'}</dd>
+                </div>
+                <div>
+                  <dt>Payment</dt>
+                  <dd>{success.paymentStatus || 'unknown'}</dd>
+                </div>
+              </dl>
+              <button className="edit-checkin-button" type="button" onClick={() => setSuccess(null)}>
+                Edit Information
+              </button>
             </div>
           </section>
         )}

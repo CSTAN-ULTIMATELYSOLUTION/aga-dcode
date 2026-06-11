@@ -3065,6 +3065,26 @@ th {
   line-height: 1.2;
 }
 
+.checkin-form .already-checkin-card {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  border-color: #bfe4df;
+  background: var(--teal-soft);
+  color: var(--teal-dark);
+}
+
+.already-checkin-card h2 {
+  margin-bottom: 6px;
+}
+
+.already-checkin-card p {
+  margin-top: 4px;
+  color: #435163;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3173,6 +3193,83 @@ th {
 .success-card p {
   margin: 4px 0 0;
   color: #435163;
+}
+
+.success-page {
+  margin-top: 20px;
+  padding: 24px;
+  align-items: stretch;
+}
+
+.success-icon {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--teal);
+}
+
+.success-content {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  flex: 1;
+}
+
+.success-content > span {
+  color: var(--teal-dark);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.success-content h2 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.success-content dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 4px 0 0;
+}
+
+.success-content dl div {
+  padding: 12px;
+  border: 1px solid #bfe4df;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.success-content dt {
+  margin-bottom: 5px;
+  color: #53716e;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.success-content dd {
+  margin: 0;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.edit-checkin-button {
+  width: fit-content;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid #0b736f;
+  border-radius: 6px;
+  background: #ffffff;
+  color: var(--teal-dark);
+  font-size: 13px;
+  font-weight: 900;
 }
 
 .qr-shell {

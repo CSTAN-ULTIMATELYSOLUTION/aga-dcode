@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import {
   applyMockPayment,
   getMissingCheckinFields,
+  isAlreadyCheckedIn,
   isCheckinFormReady,
   shouldShowMockPayButton,
 } from '../src/checkin-form.mjs';
@@ -46,4 +47,10 @@ test('applyMockPayment updates only the attendee-facing payment state', () => {
   assert.equal(paid.paymentStatus, 'Mock Payment Completed');
   assert.equal(paid.paymentReference, 'MOCK-PAYMENT');
   assert.equal(paid.paymentNote, 'Mock payment only. Finance approval still needs admin verification.');
+});
+
+test('isAlreadyCheckedIn detects completed check-in records without locking edits', () => {
+  assert.equal(isAlreadyCheckedIn({ checkedInAt: '2026-06-11T00:18:25.396Z' }), true);
+  assert.equal(isAlreadyCheckedIn({ checkedInAt: '' }), false);
+  assert.equal(isAlreadyCheckedIn({}), false);
 });
